@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  21 DEC 2023 00:35
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  21 DEC 2023 00:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -815,12 +815,9 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 97.
 
 
-Overfull \hbox (4.34209pt too wide) in paragraph at lines 118--119
+Overfull \hbox (1.09033pt too wide) in paragraph at lines 118--119
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -830,6 +827,10 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 125.
 
+[1
+
+
+]
 File: fig/software.pdf Graphic file (type pdf)
 <fig/software.pdf>
 
@@ -849,9 +850,6 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 132.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 137.
 
@@ -867,10 +865,6 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 141.
 
-[1
-
-
-]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 145.
@@ -889,18 +883,18 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 7.39746pt on input line 156.
 No complaints by nag.
 - LAST -
-Extra skip:193.31842pt
-Left:363.36281pt/0.0pt
-Right:168.76045pt/1.28394pt
-Output:362.06163pt
+Extra skip:6.78818pt
+Left:278.83238pt/0.0pt
+Right:270.76027pt/1.28394pt
+Output:275.36116pt
 [2] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
  11564 strings out of 481768
  202325 string characters out of 5933620
- 478081 words of memory out of 5000000
+ 468081 words of memory out of 5000000
  26757 multiletter control sequences out of 15000+600000
  617848 words of font info for 191 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  49i,10n,46p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (2 pages, 16148 bytes).
+Output written on out/tc-sympo-sample.dvi (2 pages, 16168 bytes).
