@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1703086378 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1703086378
-  "out/tc-sympo-sample.dvi" 1703086378 16152 8e2dcfe59b48817444c6ebad7903ef49 "latex"
+["dvipdf"] 1703086553 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1703086554
+  "out/tc-sympo-sample.dvi" 1703086553 16148 a528611b547655c6eecb8270fb52be95 "latex"
   (generated)
   "out/tc-sympo-sample.pdf"
-["latex"] 1703086378 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1703086378
+["latex"] 1703086553 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1703086554
   "/etc/texmf/web2c/texmf.cnf" 1670335848 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1703086377 8127 2b3bfc94c5b463eb459118a12e361939 ""
+  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1703086552 8123 150f940f8b06832b2c787ad918c55e47 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm" 1136768653 6880 f19b8995b61c334d78fc734065f6b4d4 ""
@@ -122,14 +122,14 @@
   "/usr/share/texmf/tex/latex/lm/t1lmtt.fd" 1256929440 2681 354015af3b61e7be30009f084986375a ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/eptex/platex.fmt" 1685482454 10599210 9de339245e37a93177f0434a6b11323f ""
+  "fig/box.pdf" 1703085468 106922 07407d05be89e855470c1b49755ea841 ""
   "fig/box2.pdf" 1703086216 826800 2280a5f8ccbdbc39bb4e72ab3fb40768 ""
   "fig/box3.pdf" 1703086249 175320 3da2147ad78390a17a36b0102c9c43b6 ""
-  "fig/box_cut.pdf" 1703085468 106922 07407d05be89e855470c1b49755ea841 ""
   "fig/software.pdf" 1703085190 26385 b9aafcd4334f8dbbb86a7082786e2290 ""
   "jsproceedings.cls" 1609129923 23503 31ea80bc6a420cac8ffa562f1f435009 ""
-  "out/tc-sympo-sample.aux" 1703086378 1398 e41f3aa275a4f62ddf9f5bec456ebbba "latex"
-  "tc-sympo-sample.tex" 1703086377 8127 2b3bfc94c5b463eb459118a12e361939 ""
+  "out/tc-sympo-sample.aux" 1703086553 1398 e41f3aa275a4f62ddf9f5bec456ebbba "latex"
+  "tc-sympo-sample.tex" 1703086552 8123 150f940f8b06832b2c787ad918c55e47 ""
   (generated)
   "out/tc-sympo-sample.aux"
-  "out/tc-sympo-sample.dvi"
   "out/tc-sympo-sample.log"
+  "out/tc-sympo-sample.dvi"
