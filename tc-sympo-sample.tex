@@ -66,7 +66,7 @@ ORNE-box2 は，ORNE-box の問題点を洗い出し改善を図るという方�
 ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性能をさらに強化したものとなっている．
 
 \subsection{ハードウェア}
-次に，ORNE-box-Series の外観を\figref{fig:orne-series}，ハードウェア構成をに示す．
+次に，ORNE-box-Series の外観を\figref{fig:orne-series}，ハードウェア構成を\tableref{table:1}に示す．
 これらのロボットは，i-Cart middle をベースとしている．
 
 \begin{figure}[h]
@@ -95,25 +95,26 @@ ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性
 \begin{table}[h!]
   \centering
     \caption{Specifications of the robots}
-    \scalebox{0.73}{
+    \label{table:1}
+    \scalebox{0.72}{
     \begin{tabular}{|l||c|c|c|}  \hline
-       & ORNE-α & ORNE-box & ORNE-box2 \\ \hline \hline
-      Depth[mm] & 690 & 106,800円 & A14 Bionic \\ \hline
-      Wide[mm] & 560 & 85,800円 & A14 Bionic \\ \hline
-      Height[mm] & 770 & 74,800円 & A14 Bionic \\ \hline
-      Wheel diameter[mm] & \multicolumn{3}{|c|}{304}\\ \hline
-      Battery & \multicolumn{3}{|c|}{LONG WP12-12}\\ \hline
-      Motor & \multicolumn{3}{|c|}{Oriental motor TF-M30-24-3500-G15L/R}\\ \hline
-      Driving system & \multicolumn{3}{|c|}{Power wheeled steering}\\ \hline
+       & ORNE-box & ORNE-box2 & ORNE-box3 \\ \hline \hline
+      Depth[mm] & \multicolumn{2}{c|}{600} & ??? \\ \hline
+      Wide[mm] & \multicolumn{2}{c|}{506.5} & ??? \\ \hline
+      Height[mm] & \multicolumn{2}{c|}{957} & ??? \\ \hline
+      Wheel diameter[mm] & \multicolumn{3}{c|}{304}\\ \hline
+      Battery & \multicolumn{3}{c|}{LONG WP14-12SE}\\ \hline
+      Motor & \multicolumn{3}{c|}{Oriental motor TF-M30-24-3500-G15L/R}\\ \hline
+      Driving system & \multicolumn{3}{c|}{Power wheeled steering}\\ \hline
       2D-LiDAR & URM-40LC-EW & None & UTM-30LX-EW\\
       & (HOKUYO) & & (HOKUYO)\\ \hline
-      3D-LiDAR & None & R-fans-16 & VLP-16\\
-      & & (SureStar) & (Velodyne)\\ \hline
-      IMU & ADIS16465 & \multicolumn{2}{|c|}{ADIS16475}\\ 
-      & (Analog devices) & \multicolumn{2}{|c|}{Analog devices}\\ \hline
-      GNSS receiver & None & \multicolumn{2}{|c|}{u-blox SCR-u2t}\\ \hline
-      Camera & CMS-V43BK & \multicolumn{2}{|c|}{None}\\ 
-      & (Sanwa supply) & \multicolumn{2}{|c|}{}\\ \hline
+      3D-LiDAR & None & \multicolumn{2}{c|}{R-fans-16} \\
+      & & \multicolumn{2}{c|}{(SureStar)}\\ \hline
+      IMU & ADIS16465 & ADIS16470 & None\\ 
+      & (Analog devices) & (Analog devices) & \\ \hline
+      % GNSS receiver & None & \multicolumn{2}{c|}{u-blox SCR-u2t}\\ \hline
+      Camera & None & \multicolumn{2}{c|}{CMS-V43BK}\\ 
+      &  & \multicolumn{2}{c|}{(Sanwa supply)}\\ \hline
     \end{tabular}
   }
   \end{table}
