@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  21 DEC 2023 01:03
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  21 DEC 2023 01:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -824,11 +824,11 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 123.
+(Font)              using `JY1/hmc/bx/n' instead on input line 122.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 126.
+(Font)              using `JY1/hmc/bx/n' instead on input line 125.
 
 [1
 
@@ -838,19 +838,23 @@ File: fig/software.pdf Graphic file (type pdf)
 <fig/software.pdf>
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 133.
+(Font)              using `JY1/hmc/bx/n' instead on input line 132.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 133.
+(Font)              using `JY1/hmc/bx/n' instead on input line 132.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 133.
+(Font)              using `JY1/hmc/bx/n' instead on input line 132.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 133.
+(Font)              using `JY1/hmc/bx/n' instead on input line 132.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 137.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -862,28 +866,24 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 140.
+(Font)              using `JY1/hmc/bx/n' instead on input line 141.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 142.
+(Font)              using `JY1/hmc/bx/n' instead on input line 145.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 146.
+(Font)              using `JY1/hmc/bx/n' instead on input line 153.
 
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 154.
-
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 157.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 156.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 157.
+(Font)              scaled to size 7.39746pt on input line 156.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 157.
+(Font)              scaled to size 7.39746pt on input line 156.
 No complaints by nag.
 - LAST -
 Extra skip:6.78818pt
