@@ -120,15 +120,15 @@ ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性
 
 
 \subsection{ソフトウェア}
-本チームでは, 従来よりROS(Robot Operating System)のnavigation stack[1]をもとに開発されたシステム
-であるorne\_navigationにより自律走行させている. 
-\figref{fig:soft-fig}に開発しているロボットのソフトウェアを含むシステム構成を示す. 
-このシステムは, 2D-LiDARを用いたMonte Carlo Localization(MCL)により確率的に自己位置を推定し, 
-経路計画に基づいて自律走行している. また, GitHubのopen-rdc[2]でプロクラムを公開している.
+本研究室では，従来より ROS(Robot Operating System)のnavigation stack[1]を基に開発されたシステム
+であるorne\_navigationにより，ロボットを自律走行させている．
+\figref{fig:soft-fig}に開発しているロボットのソフトウェアを含むシステム構成を示す．
+このシステムは，LiDARとオドメトリを用いた Monte Carlo Localization(MCL)により確率的に自己位置を推定し， 
+経路計画に基づいて自律走行している．なお，ソフトウェアは GitHubのopen-rdc[2]で公開している．\\
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=85mm]{fig/software.pdf}
+  \includegraphics[width=90mm]{fig/software.pdf}
   \caption{Structure of the system.}
   \label{fig:soft-fig}%\vspace*{-2mm}
 \end{figure}
