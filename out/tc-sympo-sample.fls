@@ -322,12 +322,12 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-v.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-h.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
-INPUT fig/alpha.pdf
-INPUT extractbb -B cropbox -O fig/alpha.pdf
-INPUT fig/box.pdf
-INPUT extractbb -B cropbox -O fig/box.pdf
+INPUT fig/box_cut.pdf
+INPUT extractbb -B cropbox -O fig/box_cut.pdf
 INPUT fig/box2.pdf
 INPUT extractbb -B cropbox -O fig/box2.pdf
+INPUT fig/box3.pdf
+INPUT extractbb -B cropbox -O fig/box3.pdf
 INPUT fig/software.pdf
 INPUT extractbb -B cropbox -O fig/software.pdf
 OUTPUT out/tc-sympo-sample.dvi
