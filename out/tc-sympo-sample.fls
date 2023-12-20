@@ -328,9 +328,9 @@ INPUT fig/box.pdf
 INPUT extractbb -B cropbox -O fig/box.pdf
 INPUT fig/box2.pdf
 INPUT extractbb -B cropbox -O fig/box2.pdf
-OUTPUT out/tc-sympo-sample.dvi
 INPUT fig/software.pdf
 INPUT extractbb -B cropbox -O fig/software.pdf
+OUTPUT out/tc-sympo-sample.dvi
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-v.tfm
