@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  22 DEC 2023 00:12
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  22 DEC 2023 00:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -489,7 +489,28 @@ Package nag Info: Loaded nag-orthodox.cfg  on input line 552.
 File: nag-orthodox.cfg 2006/04/19 v1.8 strict rules for nag.sty (ulmi)
 )) (/usr/share/texlive/texmf-dist/tex/latex/onlyamsmath/onlyamsmath.sty
 Package: onlyamsmath 2016/12/18 v0.20 Destroy the standard math environments
-) (/usr/share/texlive/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+Package: flushend 2017/03/27 v3.3 Balancing columns in twocolumn mode
+\flushend@@lastskip@a=\skip76
+\flushend@@lastskip@b=\skip77
+\flushend@@lastskip@c=\skip78
+\flushend@@penalty@a=\count335
+\flushend@@lastkern@a=\dimen265
+\var@@temp@spread=\dimen266
+\var@@temp@a=\dimen267
+\flushend@@page@rule=\dimen268
+\flushend@@varbox@a=\box82
+\flushend@@varbox@c=\box83
+\flushend@@tempbox@a=\box84
+\flushend@@tempbox@c=\box85
+\@viper=\box86
+\hold@viper=\box87
+\atColsBreak=\toks34
+\atColsEnd=\toks35
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count336
+)) (/usr/share/texlive/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
 Package: otf 2019/04/01 v1.7b8 psitau, u0.24 ttk
 LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 314.
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
@@ -507,10 +528,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
 (Font)                  JY1/hgt/m/n --> JY1/hgt/bx/n on input line 318.
 (/usr/share/texlive/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
 Package: ajmacros 2019/04/01 21:00 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp>
-\@tempcntc=\count335
-\@tempcntd=\count336
-\@tempcnte=\count337
-\@tempcntf=\count338
+\@tempcntc=\count337
+\@tempcntd=\count338
+\@tempcnte=\count339
+\@tempcntf=\count340
 )) (/usr/share/texlive/texmf-dist/tex/platex/pxchfon/pxchfon.sty
 Package: pxchfon 2020/02/01 v1.7b
 ) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
@@ -520,8 +541,8 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count339
-\c@continuedfloat=\count340
+\c@caption@flags=\count341
+\c@continuedfloat=\count342
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 ) (out/tc-sympo-sample.aux)
@@ -886,9 +907,12 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 182.
 
+File: fig/map.pdf Graphic file (type pdf)
+<fig/map.pdf>
 
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 185.
+Overfull \hbox (0.52977pt too wide) in paragraph at lines 187--188
+ [][] 
+ []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -896,7 +920,22 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 192.
+(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+
+File: fig/costmap.pdf Graphic file (type pdf)
+<fig/costmap.pdf>
+
+Overfull \hbox (0.52977pt too wide) in paragraph at lines 194--195
+ [][] 
+ []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -904,11 +943,23 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 198.
+(Font)              using `JY1/hmc/bx/n' instead on input line 195.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 201.
+(Font)              using `JY1/hmc/bx/n' instead on input line 195.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 195.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 199.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 202.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -916,39 +967,56 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 210.
+(Font)              using `JY1/hmc/bx/n' instead on input line 209.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 218.
+(Font)              using `JY1/hmc/bx/n' instead on input line 212.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 226.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 215.
+
+[2]
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 220.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 224.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 232.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 240.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 226.
+(Font)              scaled to size 7.39746pt on input line 240.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 226.
+(Font)              scaled to size 7.39746pt on input line 240.
 
-Underfull \vbox (badness 1502) has occurred while \output is active []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 245--248
+Underfull \hbox (badness 10000) in paragraph at lines 259--262
 []\T1/ptm/m/n/8 ROS wiki, point-cloud_to_laserscan $\T1/lmtt/m/n/8 https : / / wiki . ros . org /
  []
 
 No complaints by nag.
-[3
-
-] (out/tc-sympo-sample.aux) ) 
+- LAST -
+Extra skip:0.56793pt
+Left:225.76045pt/0.0pt
+Right:223.76059pt/1.43193pt
+Output:225.88016pt
+[3] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 11190 strings out of 481768
- 197323 string characters out of 5933620
- 457135 words of memory out of 5000000
- 26387 multiletter control sequences out of 15000+600000
+ 11608 strings out of 481768
+ 203006 string characters out of 5933620
+ 467081 words of memory out of 5000000
+ 26795 multiletter control sequences out of 15000+600000
  618162 words of font info for 192 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 49i,10n,46p,467b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,10n,46p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (3 pages, 22492 bytes).
+Output written on out/tc-sympo-sample.dvi (3 pages, 22968 bytes).

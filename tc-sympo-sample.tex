@@ -1,7 +1,7 @@
 \documentclass[twocolumn, 9pt]{jsproceedings}
 \RequirePackage[l2tabu, orthodox]{nag}  % 古いコマンドやパッケージを使用した場合に警告する
 \usepackage[all, warning]{onlyamsmath}  % amsmath が提供しない数式環境を使用した場合に警告する
-% \usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
+\usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
 
 
 
@@ -181,6 +181,20 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 
 \subsubsection{地図生成}
 地図
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/map.pdf}
+  \caption{Structure of the system.}
+  \label{fig:map}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/costmap.pdf}
+  \caption{Structure of the system.}
+  \label{fig:costmap}
+\end{figure}
 
 \subsubsection{選択課題 D1}
 ちなみに検証段階であったため，本走行での使用には至っていない．
