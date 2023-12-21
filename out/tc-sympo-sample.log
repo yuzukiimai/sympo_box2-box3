@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  22 DEC 2023 00:26
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  22 DEC 2023 03:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -905,57 +905,61 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 182.
+(Font)              using `JY1/hmc/bx/n' instead on input line 183.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 185.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 185.
 
 File: fig/map.pdf Graphic file (type pdf)
 <fig/map.pdf>
 
-Overfull \hbox (0.52977pt too wide) in paragraph at lines 187--188
+Overfull \hbox (0.52977pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+(Font)              using `JY1/hmc/bx/n' instead on input line 191.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+(Font)              using `JY1/hmc/bx/n' instead on input line 191.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+(Font)              using `JY1/hmc/bx/n' instead on input line 191.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 188.
+(Font)              using `JY1/hmc/bx/n' instead on input line 191.
 
 File: fig/costmap.pdf Graphic file (type pdf)
 <fig/costmap.pdf>
 
-Overfull \hbox (0.52977pt too wide) in paragraph at lines 194--195
+Overfull \hbox (0.52977pt too wide) in paragraph at lines 197--198
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 195.
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 195.
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 195.
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 195.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 199.
+(Font)              using `JY1/hmc/bx/n' instead on input line 198.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -963,7 +967,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 206.
+(Font)              using `JY1/hmc/bx/n' instead on input line 205.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -973,50 +977,49 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 212.
 
+[2]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 215.
 
-[2]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 220.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 224.
+(Font)              using `JY1/hmc/bx/n' instead on input line 218.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 232.
+(Font)              using `JY1/hmc/bx/n' instead on input line 223.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 240.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 227.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 235.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 243.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 240.
+(Font)              scaled to size 7.39746pt on input line 243.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 240.
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--262
-[]\T1/ptm/m/n/8 ROS wiki, point-cloud_to_laserscan $\T1/lmtt/m/n/8 https : / / wiki . ros . org /
- []
-
+(Font)              scaled to size 7.39746pt on input line 243.
 No complaints by nag.
 - LAST -
-Extra skip:0.56793pt
-Left:225.76045pt/0.0pt
-Right:223.76059pt/1.43193pt
-Output:225.88016pt
+Extra skip:65.99959pt
+Left:331.76031pt/1.43193pt
+Right:265.76073pt/1.43193pt
+Output:331.88016pt
 [3] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 11608 strings out of 481768
- 203006 string characters out of 5933620
- 467081 words of memory out of 5000000
- 26795 multiletter control sequences out of 15000+600000
+ 11610 strings out of 481768
+ 203030 string characters out of 5933620
+ 468081 words of memory out of 5000000
+ 26797 multiletter control sequences out of 15000+600000
  618162 words of font info for 192 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 49i,10n,46p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,10n,47p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (3 pages, 22968 bytes).
+Output written on out/tc-sympo-sample.dvi (3 pages, 23988 bytes).

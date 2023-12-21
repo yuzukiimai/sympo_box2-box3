@@ -173,6 +173,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 
 \begin{itemize}
   \item 自己位置推定パッケージ：emcl2\cite{emcl2}
+  \item waypoint パッケージ：waypoint\_manager\cite{waypoint}
   \item global planner：dijkstra
   \item local planner：TrajectoryPlannerROS
   \item map
@@ -180,7 +181,9 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 
 
 \subsubsection{地図生成}
-地図
+自律走行時に使用する地図の作成には，Cartographer\cite{Cartographer}を用いた．
+ここで，本走行において使用した占有格子地図を\figref{fig:map}，\figref{fig:costmap}に示す．
+これらの地図は，確認走行エリアとその先の信号あり横断歩道までと公園エリア
 
 \begin{figure}[h!]
   \centering
@@ -201,7 +204,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 
 \subsubsection{本走行の結果}
 box2チームの本年度の本走行の記録は，715[m]であった．
-なお，つくばチャレンジ2023EX＠イーアスつくば本走行において，box2チームは完走を達成している．
+なお box2チームは，つくばチャレンジ2023EX＠イーアスつくば本走行において完走を達成している．
 
 \subsection{box3チームの取り組み}
 本年度の取り組みを以下で紹介する．
@@ -256,13 +259,23 @@ Robot Design and Control Lab, open-rdc, リポジトリ\\
 (最終閲覧日：\today)
 
 \bibitem{pointcloud}
-ROS wiki, pointcloud\_to\_laserscan
-\url{https://wiki.ros.org/pointcloud_to_laserscan}
+ROS wiki, pointcloud\_to\_laserscan\\
+\url{https://wiki.ros.org/pointcloud_to_laserscan}\\
 (最終閲覧日：\today)
 
 \bibitem{emcl2}
-ryuichiueda, emcl2 リポジトリ
-\url{https://github.com/ryuichiueda/emcl2}
+ryuichiueda, emcl2 リポジトリ\\
+\url{https://github.com/ryuichiueda/emcl2}\\
+(最終閲覧日：\today)
+
+\bibitem{waypoint}
+masakifujiwara1, waypoint\_manager リポジトリ\\
+\url{https://github.com/masakifujiwara1/waypoint_manager}\\
+(最終閲覧日：\today)
+
+\bibitem{Cartographer}
+cartographer-project, cartographer リポジトリ\\
+\url{https://github.com/cartographer-project/cartographer}\\
 (最終閲覧日：\today)
 
 
