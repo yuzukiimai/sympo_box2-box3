@@ -329,6 +329,9 @@ INPUT fig/software.pdf
 INPUT extractbb -B cropbox -O fig/software.pdf
 INPUT fig/box2_sensor_cut2.pdf
 INPUT extractbb -B cropbox -O fig/box2_sensor_cut2.pdf
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-v.tfm

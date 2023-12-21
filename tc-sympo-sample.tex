@@ -58,7 +58,7 @@
 このような問題を踏まえ，本研究室では屋外自律移動ロボットプラットフォーム ORNE-boxの開発を行ってきた\cite{box}．
 日々検証と改良を重ねており，現在は，3台のロボット（ORNE-box，ORNE-box2，ORNE-box3）がある．
 これらのロボットは，屋外での自律走行を目的としており，屋外自律走行の研究開発に必要な機能をパッケージ化
-し，提供することを目標に開発を行っている．現在はウェブページ上にて設計データなどを順次公開している．
+し，提供することを目標に開発を行っている．設計データなどは，ウェブページ上にて順次公開している．
 
 ORNE-box2 は，ORNE-box の問題点を洗い出し改善を図るという方針のもと，昨年度から開発を行っている．
 センサ構成などに差異はあるが，基本的なシステム構成は同じである．
@@ -91,6 +91,7 @@ ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性
   \label{fig:orne-series}
 \end{figure}
 
+\vspace*{-2mm}
 
 \begin{table}[h!]
   \centering
@@ -152,15 +153,34 @@ ORNE-box2では，本走行前日にロボットの制御に使用していた�
 なお，制御用のコンピュータには，記録走行完走時に用いていた Jetson AGX Xavier を使用した．
 本年度の取り組みを以下で紹介する．
 
-\subsubsection{センサおよびシステムの構成}
-ああああああ
+\subsubsection{センサ・システム構成}
+ORNE-box2は，LiDAR，ホイールエンコーダ，IMU，RGBカメラというセンサ構成で実験走行および本走行に臨んだ．
+特徴としては，\figref{fig:box2-sensor}のように 2つの LiDAR を用いている点が挙げられる．
+上部は自己位置推定用，下部は障害物回避用と使い分けることで，自己位置推定を正確に行いつつ，
+低層の障害物などを検出して回避するという狙いがある．ここで，上部に取り付けた LiDAR は，3D-LiDAR であるが，
+pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群を圧縮し，2次元の点群として利用している．
+また，ロボットの上部に取り付けたカメラは，選択課題 D1 に取り組む際に使用した．
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=100mm]{fig/box2_sensor_cut2.pdf}
+  \includegraphics[width=90mm]{fig/box2_sensor_cut2.pdf}
   \caption{Structure of the system.}
-  \label{fig:soft-fig}
+  \label{fig:box2-sensor}
 \end{figure}
+
+
+さらに，自律走行時のシステム構成を以下に示す．
+
+\begin{itemize}
+  \item 自己位置推定パッケージ：emcl2\cite{emcl2}
+  \item global planner：dijkstra
+  \item local planner：TrajectoryPlannerROS
+  \item map
+\end{itemize}
+
+
+\subsubsection{地図生成}
+地図
 
 \subsubsection{選択課題 D1}
 ちなみに検証段階であったため，本走行での使用には至っていない．
@@ -220,6 +240,17 @@ open-rdc, orne-box リポジトリ\\
 Robot Design and Control Lab, open-rdc, リポジトリ\\
 \url{https://github.com/open-rdc}\\
 (最終閲覧日：\today)
+
+\bibitem{pointcloud}
+ROS wiki, pointcloud\_to\_laserscan
+\url{https://wiki.ros.org/pointcloud_to_laserscan}
+(最終閲覧日：\today)
+
+\bibitem{emcl2}
+ryuichiueda, emcl2 リポジトリ
+\url{https://github.com/ryuichiueda/emcl2}
+(最終閲覧日：\today)
+
 
 \end{thebibliography}
 \normalsize
