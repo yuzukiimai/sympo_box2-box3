@@ -173,6 +173,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 
 \begin{itemize}
   \item 自己位置推定パッケージ：emcl2\cite{emcl2}
+  \item センサ情報統合パッケージ：robot\_localization\cite{robotlocalization}
   \item waypoint パッケージ：waypoint\_manager\cite{waypoint}
   \item global planner：dijkstra
   \item local planner：TrajectoryPlannerROS
@@ -183,7 +184,13 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 \subsubsection{地図生成}
 自律走行時に使用する地図の作成には，Cartographer\cite{Cartographer}を用いた．
 ここで，本走行において使用した占有格子地図を\figref{fig:map}，\figref{fig:costmap}に示す．
-これらの地図は，確認走行エリアとその先の信号あり横断歩道までと公園エリア
+\figref{fig:map}は，自己位置推定用に使用する地図であり，基本的には作成時のものから手を加えていない．
+\figref{fig:costmap}は，経路計画用に用いる地図である．\figref{fig:map}の自己位置推定用に用いる地図に
+侵入不可能な領域を設定している．このようにすることで，ロボットは侵入不可能領域外で
+経路を生成するようになる．さらに，領域を囲うことで，経路を計算する領域も削減するため，
+コンピュータの負荷を減らすことが可能である．
+これらの地図は，確認走行エリア，その先から信号あり横断歩道まで，公園エリアのそれぞれで作成した
+地図を合成している．地図の合成および編集には，GIMP\cite{gimp}を用いた．
 
 \begin{figure}[h!]
   \centering
@@ -191,7 +198,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
   \caption{Structure of the system.}
   \label{fig:map}
 \end{figure}
-
+\vspace*{-1mm}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/costmap.pdf}
@@ -268,6 +275,11 @@ ryuichiueda, emcl2 リポジトリ\\
 \url{https://github.com/ryuichiueda/emcl2}\\
 (最終閲覧日：\today)
 
+\bibitem{robotlocalization}
+cra-ros-pkg, robot\_localization リポジトリ\\
+\url{https://github.com/cra-ros-pkg/robot_localization}\\
+(最終閲覧日：\today)
+
 \bibitem{waypoint}
 masakifujiwara1, waypoint\_manager リポジトリ\\
 \url{https://github.com/masakifujiwara1/waypoint_manager}\\
@@ -278,6 +290,10 @@ cartographer-project, cartographer リポジトリ\\
 \url{https://github.com/cartographer-project/cartographer}\\
 (最終閲覧日：\today)
 
+\bibitem{gimp}
+GIMP 公式ドキュメント\\
+\url{https://www.gimp.org/}\\
+(最終閲覧日：\today)
 
 \end{thebibliography}
 \normalsize
