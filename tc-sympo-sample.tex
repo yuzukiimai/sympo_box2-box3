@@ -91,13 +91,13 @@ ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性
   \label{fig:orne-series}
 \end{figure}
 
-\vspace*{-1mm}
+\vspace*{-6mm}
 
 \begin{table}[h!]
   \centering
-    \caption{Specifications of the robots}
+    \caption{Specifications of the robots.}
     \label{table:1}
-    \scalebox{0.72}{
+    \scalebox{0.78}{
     \begin{tabular}{|l||c|c|c|}  \hline
        & ORNE-box & ORNE-box2 & ORNE-box3 \\ \hline \hline
       Depth[mm] & \multicolumn{2}{c|}{600} & ??? \\ \hline
@@ -154,7 +154,7 @@ ORNE-box2では，本走行前日にロボットの制御に使用していた�
 本年度の取り組みを以下で紹介する．
 
 \subsubsection{センサ・システム構成}
-ORNE-box2は，LiDAR，ホイールエンコーダ，IMU，RGBカメラというセンサ構成で実験走行および本走行に臨んだ．
+box2チームは，LiDAR，ホイールエンコーダ，IMU，RGBカメラというセンサ構成で実験走行および本走行に臨んだ．
 特徴としては，\figref{fig:box2-sensor}のように 2つの LiDAR を用いている点が挙げられる．
 上部は自己位置推定用，下部は障害物回避用と使い分けることで，自己位置推定を正確に行いつつ，
 低層の障害物などを検出して回避するという狙いがある．ここで，上部に取り付けた LiDAR は，3D-LiDAR であるが，
@@ -164,7 +164,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/box2_sensor_cut2.pdf}
-  \caption{Structure of the system.}
+  \caption{The sensor configuration of the box2 team.}
   \label{fig:box2-sensor}
 \end{figure}
 
@@ -196,14 +196,14 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/map.pdf}
-  \caption{Structure of the system.}
+  \caption{Map used for localization.}
   \label{fig:map}
 \end{figure}
 \vspace*{-1mm}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/costmap.pdf}
-  \caption{Structure of the system.}
+  \caption{Map used for planning.}
   \label{fig:costmap}
 \end{figure}
 
@@ -216,6 +216,8 @@ box2チームでは，選択課題D1にも取り組んだ．
 
 \subsubsection{本走行の結果}
 box2チームの本年度の本走行の記録は，715[m]であった．
+ここに失敗した場所と原因を追加
+
 なお box2チームは，つくばチャレンジ2023EX＠イーアスつくば本走行において完走を達成している．
 
 \subsection{box3チームの取り組み}
