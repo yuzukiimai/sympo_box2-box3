@@ -107,8 +107,8 @@ ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性
       Battery & \multicolumn{3}{c|}{LONG WP14-12SE}\\ \hline
       Motor & \multicolumn{3}{c|}{Oriental motor TF-M30-24-3500-G15L/R}\\ \hline
       Driving system & \multicolumn{3}{c|}{Power wheeled steering}\\ \hline
-      2D-LiDAR & URM-40LC-EW &  UTM-30LX-EW & None\\
-      & (HOKUYO) & (HOKUYO) & \\ \hline
+      2D-LiDAR & None &  UTM-30LX-EW & None\\
+      & & (HOKUYO) & \\ \hline
       3D-LiDAR & None & \multicolumn{2}{c|}{R-fans-16} \\
       & & \multicolumn{2}{c|}{(SureStar)}\\ \hline
       IMU & ADIS16465 & ADIS16470 & None\\ 
@@ -184,13 +184,14 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 \subsubsection{地図生成}
 自律走行時に使用する地図の作成には，Cartographer\cite{Cartographer}を用いた．
 ここで，本走行において使用した占有格子地図を\figref{fig:map}，\figref{fig:costmap}に示す．
-\figref{fig:map}は，自己位置推定用に使用する地図であり，基本的には作成時のものから手を加えていない．
-\figref{fig:costmap}は，経路計画用に用いる地図である．\figref{fig:map}の自己位置推定用に用いる地図に
-侵入不可能な領域を設定している．このようにすることで，ロボットは侵入不可能領域外で
-経路を生成するようになる．さらに，領域を囲うことで，経路を計算する領域も削減するため，
-コンピュータの負荷を減らすことが可能である．
-これらの地図は，確認走行エリア，その先から信号あり横断歩道まで，公園エリアのそれぞれで作成した
-地図を合成している．地図の合成および編集には，GIMP\cite{gimp}を用いた．
+\figref{fig:map}は，自己位置推定に使用する地図であり，基本的には作成時のものから手を加えていない．
+\figref{fig:costmap}は，経路計画に用いる地図である．\figref{fig:map}の自己位置推定に用いる地図に
+侵入不可能な領域を設定している．これにより，ロボットは侵入不可能領域外で
+経路を生成するようになる．さらに，領域を囲うことで，経路を計算する領域が減るため，
+コンピュータの負荷を減らすことができる．
+これらの地図は，確認走行エリア，その先から信号あり横断歩道，公園エリアのそれぞれで作成した
+地図を合成している．地図の合成や編集には，GIMP\cite{gimp}を用いた．
+ちなみに，resolutionは 0.10[m/pixel]で，ファイルのサイズは17.8MBであった．
 
 \begin{figure}[h!]
   \centering
@@ -207,13 +208,18 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 \end{figure}
 
 \subsubsection{選択課題 D1}
-ちなみに検証段階であったため，本走行での使用には至っていない．
+box2チームでは，選択課題D1にも取り組んだ．
+
+ここに図貼って説明追加
+
+ただし，検証段階であったため，本走行での使用には至っていない．
 
 \subsubsection{本走行の結果}
 box2チームの本年度の本走行の記録は，715[m]であった．
 なお box2チームは，つくばチャレンジ2023EX＠イーアスつくば本走行において完走を達成している．
 
 \subsection{box3チームの取り組み}
+ROS2 Dockerなど、、、
 本年度の取り組みを以下で紹介する．
 
 \subsubsection{システム構成}
