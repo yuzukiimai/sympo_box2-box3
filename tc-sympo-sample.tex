@@ -186,7 +186,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 ここで，本走行において使用した占有格子地図を\figref{fig:map}，\figref{fig:costmap}に示す．
 \figref{fig:map}は，自己位置推定に使用する地図であり，基本的には作成時のものから手を加えていない．
 \figref{fig:costmap}は，経路計画に用いる地図である．\figref{fig:map}の自己位置推定に用いる地図に
-侵入不可能な領域を設定している．これにより，ロボットは侵入不可能領域外で
+侵入不可能な領域を設定している．これにより，ロボットは侵入不可能領域以外で
 経路を生成するようになる．さらに，領域を囲うことで，経路を計算する領域が減るため，
 コンピュータの負荷を減らすことができる．
 これらの地図は，確認走行エリア，その先から信号あり横断歩道，公園エリアのそれぞれで作成した
@@ -218,14 +218,28 @@ box2チームでは，選択課題D1にも取り組んだ．
 box2チームの本年度の本走行の記録は，715[m]であった．
 ここに失敗した場所と原因を追加
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/result_box2_cut.pdf}
+  \caption{box2 team.}
+  \label{fig:box2-result}
+\end{figure}
+
 なお box2チームは，つくばチャレンジ2023EX＠イーアスつくば本走行において完走を達成している．
 
 \subsection{box3チームの取り組み}
 ROS2 Dockerなど、、、
 本年度の取り組みを以下で紹介する．
 
-\subsubsection{システム構成}
+\subsubsection{センサ・システム構成}
 ああああああ
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/box3_sensor.pdf}
+  \caption{The sensor configuration of the box3 team.}
+  \label{fig:box3-sensor}
+\end{figure}
 
 \subsubsection{信号認識}
 ああああああ

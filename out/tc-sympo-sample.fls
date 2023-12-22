@@ -340,6 +340,10 @@ INPUT fig/map.pdf
 INPUT extractbb -B cropbox -O fig/map.pdf
 INPUT fig/costmap.pdf
 INPUT extractbb -B cropbox -O fig/costmap.pdf
+INPUT fig/result_box2_cut.pdf
+INPUT extractbb -B cropbox -O fig/result_box2_cut.pdf
+INPUT fig/box3_sensor.pdf
+INPUT extractbb -B cropbox -O fig/box3_sensor.pdf
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-v.tfm
