@@ -58,7 +58,7 @@
 このような問題を踏まえ，本研究室では屋外自律移動ロボットプラットフォーム ORNE-boxの開発を行ってきた\cite{box}．
 日々検証と改良を重ねており，現在は，3台のロボット（ORNE-box，ORNE-box2，ORNE-box3）がある．
 これらのロボットは，屋外での自律走行を目的としており，屋外自律走行の研究開発に必要な機能をパッケージ化
-し，提供することを目標に開発を行っている．設計データなどは，ウェブページ上にて順次公開している．
+し，提供することを目標に開発を行っている．設計データなどは，ウェブページ上にて順次公開している\cite{box-data}．
 
 ORNE-box2 は，ORNE-box の問題点を洗い出し改善を図るという方針のもと，昨年度から開発を行っている．
 センサ構成などに差異はあるが，基本的なシステム構成は同じである．
@@ -66,8 +66,8 @@ ORNE-box2 は，ORNE-box の問題点を洗い出し改善を図るという方�
 ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性能をさらに強化したものとなっている．
 
 \subsection{ハードウェア}
-次に，ORNE-box-Series の外観を\figref{fig:orne-series}，ハードウェア構成を\tableref{table:1}に示す．
-これらのロボットは，i-Cart middle をベースとしている．
+ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:1}に示す．
+これらのロボットは，i-Cart middle\cite{icart} をベースとしている．
 
 \begin{figure}[h]
   \centering
@@ -91,15 +91,15 @@ ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性
   \label{fig:orne-series}
 \end{figure}
 
-\vspace*{-6mm}
+\vspace*{-4mm}
 
 \begin{table}[h!]
   \centering
     \caption{Specifications of the robots.}
     \label{table:1}
-    \scalebox{0.78}{
+    \scalebox{0.73}{
     \begin{tabular}{|l||c|c|c|}  \hline
-       & ORNE-box & ORNE-box2 & ORNE-box3 \\ \hline \hline
+      & ORNE-box & ORNE-box2 & ORNE-box3 \\ \hline \hline
       Depth[mm] & \multicolumn{2}{c|}{600} & ??? \\ \hline
       Wide[mm] & \multicolumn{2}{c|}{506.5} & ??? \\ \hline
       Height[mm] & \multicolumn{2}{c|}{957} & ??? \\ \hline
@@ -114,7 +114,9 @@ ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性
       IMU & ADIS16465 & ADIS16470 & None\\ 
       & (Analog devices) & (Analog devices) & \\ \hline
       Camera & None & \multicolumn{2}{c|}{CMS-V43BK}\\ 
-      &  & \multicolumn{2}{c|}{(Sanwa supply)}\\ \hline
+      & & \multicolumn{2}{c|}{(Sanwa supply)}\\ \hline
+      Computer & None & Jetson AGX Xavier & Jetson Orin NX\\ 
+      & & (NVIDIA) & (NVIDIA)\\ \hline
     \end{tabular}
   }
   \end{table}
@@ -292,6 +294,16 @@ ROS2 Dockerなど、、、
 \bibitem{box}
 井口 颯人, 石江 義規, 樋高 聖人, 上田 隆一, 林原 靖男　: “ 屋外自律移動ロ
 ボットプラットフォーム ORNE-box の開発 ”, 3H2-03 , SI2021(2021)
+
+\bibitem{box-data}
+open-rdc, orne-box, wiki\\
+\url{https://github.com/open-rdc/orne-box/wiki}\\
+(最終閲覧日：\today)
+
+\bibitem{icart}
+T-frog Project\\
+\url{https://t-frog.com/forums/forum.php?ml=icart-mini-devel}\\
+(最終閲覧日：\today)
 
 \bibitem{navigation}
 ros-planning, navigation リポジトリ\\
