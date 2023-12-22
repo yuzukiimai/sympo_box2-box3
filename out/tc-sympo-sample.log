@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  23 DEC 2023 04:50
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  23 DEC 2023 04:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1065,9 +1065,6 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 250.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 (Font)              using `JY1/hmc/bx/n' instead on input line 255.
 
@@ -1097,18 +1094,18 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 7.39746pt on input line 283.
 No complaints by nag.
 - LAST -
-Extra skip:101.67134pt
-Left:773.78218pt/1.1096pt
-Right:671.78851pt/1.43193pt
-Output:765.90498pt
+Extra skip:151.74663pt
+Left:793.07608pt/0.0pt
+Right:639.89752pt/1.43193pt
+Output:783.98303pt
 [3] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
  11627 strings out of 481768
  203377 string characters out of 5933620
- 476081 words of memory out of 5000000
+ 477081 words of memory out of 5000000
  26811 multiletter control sequences out of 15000+600000
  618162 words of font info for 192 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  49i,10n,46p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (3 pages, 26796 bytes).
+Output written on out/tc-sympo-sample.dvi (3 pages, 26800 bytes).
