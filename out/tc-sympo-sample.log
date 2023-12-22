@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  23 DEC 2023 05:29
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  23 DEC 2023 05:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1071,7 +1071,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 File: fig/blue_cut.pdf Graphic file (type pdf)
 <fig/blue_cut.pdf>
 
-Overfull \hbox (25.82095pt too wide) in paragraph at lines 261--262
+Overfull \hbox (7.93094pt too wide) in paragraph at lines 261--262
  [][] 
  []
 
@@ -1086,7 +1086,7 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 File: fig/red_cut.pdf Graphic file (type pdf)
 <fig/red_cut.pdf>
 
-Overfull \hbox (25.82095pt too wide) in paragraph at lines 267--268
+Overfull \hbox (7.93094pt too wide) in paragraph at lines 267--268
  [][] 
  []
 
