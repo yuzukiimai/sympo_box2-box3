@@ -1,7 +1,7 @@
 \documentclass[twocolumn, 9pt]{jsproceedings}
 \RequirePackage[l2tabu, orthodox]{nag}  % 古いコマンドやパッケージを使用した場合に警告する
 \usepackage[all, warning]{onlyamsmath}  % amsmath が提供しない数式環境を使用した場合に警告する
-% \usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
+\usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
 
 
 
@@ -63,7 +63,7 @@
 ORNE-box2 は，ORNE-box の問題点を洗い出し改善を図るという方針のもと，昨年度から開発を行っている．
 センサ構成などに差異はあるが，基本的なシステム構成は同じである．
 
-ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性能や拡張性をさらに強化した設計となっている．
+ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性能や拡張性をさらに改善した設計となっている．
 
 \subsection{ハードウェア}
 ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:1}に示す．
@@ -126,7 +126,7 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
 本研究室では，従来より ROS(Robot Operating System)のnavigation stack\cite{navigation}を基に開発された
 システムであるorne\_navigation\cite{orne-navigation} と orne\_box\cite{orne-box} により，ロボットを自律走行させている．
 \figref{fig:soft-fig}に開発しているロボットのソフトウェアを含むシステム構成を示す．
-このシステムは，LiDARとオドメトリを用いた Monte Carlo Localization(MCL)により確率的に自己位置を推定し， 
+このシステムは，LiDARなど複数のセンサを用いた Monte Carlo Localization(MCL)により確率的に自己位置を推定し， 
 経路計画に基づいて自律走行している．なお，両ソフトウェアは GitHubのopen-rdc\cite{open-rdc} で公開している．
 
 \begin{figure}[h!]
@@ -242,18 +242,20 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
   \label{fig:hako}
 \end{figure}
 
-\vspace*{-1mm}次に，これらの課題を達成するために取り組んだ内容を以下に述べる．
+\vspace*{-4mm}次に，これらの課題を達成するために取り組んだ内容を以下に述べる．
 
 \begin{itemize}
   \setlength{\leftskip}{-1zw}
-  \item 集荷ボックスおよび宅配ボックスの認識
+  \item 集荷ボックス，宅配ボックス，配達先の認識
 \end{itemize}
 \vspace*{-2.5mm}
 
-集荷ボックスと宅配ボックスの認識には，YOLOv5を用いた．YOLOは画像を入力すると，対象とした物体が
-画像中のどこにあるかを表すバウンディングボックスと認識率を出力する．データセットは，自作のものを使用した．
-学習のために？枚の画像からなるデータセットを作成し，そのうちの？枚を訓練，？枚を検証に用いた．
-自作のデータセットは，ボックス 2つ(集荷，宅配)と配達先 3つ(a,b,c)の計5 クラスでアノテーションをした．
+集荷ボックス，宅配ボックス，配達先の認識には，YOLOv5を用いた．YOLOは画像を入力すると，対象とした物体が
+画像中のどこにあるかを表すバウンディングボックスと認識率を出力する．
+本課題の認識ために，データセットを作成した．
+手順としては，まず ORNE-box2の上部に取り付けたカメラを使用し，現地で画像を収集した．
+次に，収集した画像にボックス 2つ(集荷，宅配)と配達先 3つ(a,b,c)の計5 クラスでラベル付けをした．
+合計？つのデータセットを作成し，そのうちの？つを訓練用，？つを検証用とした．
 
 
 
