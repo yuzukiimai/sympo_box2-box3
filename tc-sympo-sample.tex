@@ -220,13 +220,19 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 
 \vspace*{1mm}
 
-1）集荷ボックス\figref{fig:hako} (a)の待機列に整列\\
-\hspace*{1zw}2）白線を認識し，その手前 1[m]以内で一時停止\\
-\hspace*{1zw}3）オペレータ操作により走行再開\\
-\hspace*{1zw}4）集荷ボックスに50[cm]まで接近し，3秒以上停止\\
-\hspace*{1zw}5）配達先ラベルを認識し，90秒以内に移動\\
-\hspace*{1zw}6）指定の宅配ボックス\figref{fig:hako} (b)を探索\\
-\hspace*{1zw}7）指定の宅配ボックスに50[cm]まで接近し，3秒以上停止
+1）集荷ボックス\figref{fig:hako} (a)の待機列に整列
+
+2）白線を認識し，その手前 1[m]以内で一時停止
+
+3）オペレータ操作により走行再開
+
+4）集荷ボックスに50[cm]まで接近し，3秒以上停止
+
+5）配達先ラベルを認識し，90秒以内に移動
+
+6）指定の宅配ボックス\figref{fig:hako} (b)を探索
+
+7）指定の宅配ボックスに50[cm]まで接近し，3秒以上停止
 
 \begin{figure}[h!]
   \begin{minipage}[t]{0.47\linewidth}
@@ -264,7 +270,9 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 しかし，\figref{fig:test2}の例では，配達先を誤認識した．
 その原因としては，\figref{fig:test1}の例に比べて，対象物とロボットの距離があることや，屋外であるため
 照明条件の変化によって収集したデータセットとの差が発生したのではないかと考えられる．
+
 \vspace*{0.5mm}
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/test1.pdf}
@@ -279,6 +287,11 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
   \label{fig:test2}
 \end{figure}
 
+\begin{itemize}
+  \setlength{\leftskip}{-1zw}
+  \item 行動決定
+\end{itemize}
+\vspace*{-2.5mm}
 
 ただし，検証段階であったため，本走行での使用には至っていない．
 % ----------------------------ここまで---------------------------------------------------
@@ -305,8 +318,6 @@ box2チームの本年度の本走行の記録は，715[m]であった．
   \caption{box2 team.}
   \label{fig:box2-result}
 \end{figure}
-
-
 
 \subsection{box3チームの取り組み}
 ROS2 Dockerなど、、、
