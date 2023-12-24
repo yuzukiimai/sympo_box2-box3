@@ -218,13 +218,29 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 box2チームでは，本年度から新しく追加された選択課題D1にも取り組んだ．
 ここで，課題の概要を述べる．本課題は以下の流れで行う．\\
 
-1）集荷ボックス（緑の箱）の待機列に整列\\
+1）集荷ボックス\figref{fig:hako}（a）の待機列に整列\\
 \hspace*{1zw}2）白線を認識し，その手前 1[m]以内で一時停止\\
 \hspace*{1zw}3）オペレータ操作により走行再開\\
 \hspace*{1zw}4）集荷ボックスに50[cm]まで接近し，3秒以上停止\\
 \hspace*{1zw}5）配達先ラベルを認識し，90秒以内に移動\\
-\hspace*{1zw}6）指定の宅配ボックス（青）を探索\\
+\hspace*{1zw}6）指定の宅配ボックス\figref{fig:hako}（b）を探索\\
 \hspace*{1zw}7）指定の宅配ボックスに50[cm]まで接近し，3秒以上停止\\
+
+\begin{figure}[h!]
+  \begin{minipage}[t]{0.47\linewidth}
+    \centering
+    \includegraphics[width=45mm]{fig/syuuka.pdf}
+    \caption*{(a) ORNE-box2}
+  \end{minipage}
+  \hspace*{2mm}
+  \begin{minipage}[t]{0.47\linewidth}
+    \centering
+    \includegraphics[width=44.24mm]{fig/takuhai.pdf}
+    \caption*{(b) ORNE-box2}
+  \end{minipage}%\vspace*{2mm}
+  \caption{Number of return to path}
+  \label{fig:hako}
+\end{figure}
 
 次に，これらの課題を達成するために取り組んだ内容を以下に述べる．
 
@@ -232,8 +248,9 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
   \setlength{\leftskip}{-1zw}
   \item 集荷ボックスおよび宅配ボックスの認識
 \end{itemize}
+\vspace*{-1zh}
 
-集荷ボックスと宅配ボックスの認識には，YOLOv5を用いた．
+集荷ボックスと宅配ボックスの認識には，YOLOv5を用いた．\\
 
 
 
@@ -395,6 +412,18 @@ cartographer-project, cartographer リポジトリ\\
 GIMP 公式ドキュメント\\
 \url{https://www.gimp.org/}\\
 (最終閲覧日：\today)
+
+\bibitem{tukuba}
+つくばチャレンジ 2023 公式サイト\\
+\url{https://tsukubachallenge.jp/2023/}\\
+(最終閲覧日：\today)
+
+\bibitem{yolo}
+ultralytics, yolov5 リポジトリ\\
+\url{https://github.com/ultralytics/yolov5}\\
+(最終閲覧日：\today)
+
+
 
 \end{thebibliography}
 \normalsize

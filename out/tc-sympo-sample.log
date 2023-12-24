@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  24 DEC 2023 22:53
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  24 DEC 2023 23:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -964,142 +964,159 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 [2]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 249.
+(Font)              using `JY1/hmc/bx/n' instead on input line 221.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 252.
+(Font)              using `JY1/hmc/bx/n' instead on input line 226.
+
+File: fig/syuuka.pdf Graphic file (type pdf)
+<fig/syuuka.pdf>
+
+Overfull \hbox (7.93094pt too wide) in paragraph at lines 232--233
+ [][] 
+ []
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 233.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 233.
+
+File: fig/takuhai.pdf Graphic file (type pdf)
+<fig/takuhai.pdf>
+
+Overfull \hbox (5.76854pt too wide) in paragraph at lines 238--239
+ [][] 
+ []
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 239.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 239.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 241.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 241.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 241.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 241.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 266.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 269.
 
 File: fig/result_box2_cut.pdf Graphic file (type pdf)
 <fig/result_box2_cut.pdf>
 
-Overfull \hbox (0.52977pt too wide) in paragraph at lines 261--262
+Overfull \hbox (0.52977pt too wide) in paragraph at lines 278--279
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 262.
+(Font)              using `JY1/hmc/bx/n' instead on input line 279.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 262.
+(Font)              using `JY1/hmc/bx/n' instead on input line 279.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 262.
+(Font)              using `JY1/hmc/bx/n' instead on input line 279.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 262.
+(Font)              using `JY1/hmc/bx/n' instead on input line 279.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 268.
+(Font)              using `JY1/hmc/bx/n' instead on input line 285.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 272.
+(Font)              using `JY1/hmc/bx/n' instead on input line 289.
 
 File: fig/box3_sensor.pdf Graphic file (type pdf)
 <fig/box3_sensor.pdf>
 
-Overfull \hbox (0.52977pt too wide) in paragraph at lines 281--282
+Overfull \hbox (0.52977pt too wide) in paragraph at lines 298--299
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 282.
+(Font)              using `JY1/hmc/bx/n' instead on input line 299.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 282.
+(Font)              using `JY1/hmc/bx/n' instead on input line 299.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 282.
+(Font)              using `JY1/hmc/bx/n' instead on input line 299.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 282.
+(Font)              using `JY1/hmc/bx/n' instead on input line 299.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: fig/box3_system.pdf Graphic file (type pdf)
 <fig/box3_system.pdf>
 
-Overfull \hbox (0.52977pt too wide) in paragraph at lines 291--292
+Overfull \hbox (0.52977pt too wide) in paragraph at lines 308--309
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 292.
+(Font)              using `JY1/hmc/bx/n' instead on input line 309.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 292.
+(Font)              using `JY1/hmc/bx/n' instead on input line 309.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 292.
+(Font)              using `JY1/hmc/bx/n' instead on input line 309.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 292.
+(Font)              using `JY1/hmc/bx/n' instead on input line 309.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 297.
+(Font)              using `JY1/hmc/bx/n' instead on input line 314.
 
 File: fig/blue_cut.pdf Graphic file (type pdf)
 <fig/blue_cut.pdf>
 
-Overfull \hbox (7.93094pt too wide) in paragraph at lines 303--304
+Overfull \hbox (7.93094pt too wide) in paragraph at lines 320--321
  [][] 
  []
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 304.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 304.
-
-File: fig/red_cut.pdf Graphic file (type pdf)
-<fig/red_cut.pdf>
-
-Overfull \hbox (7.93094pt too wide) in paragraph at lines 309--310
- [][] 
- []
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 310.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 310.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 312.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 312.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 312.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 312.
-
-
-LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 315.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
@@ -1107,32 +1124,75 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 325.
+(Font)              using `JY1/hmc/bx/n' instead on input line 321.
+
+File: fig/red_cut.pdf Graphic file (type pdf)
+<fig/red_cut.pdf>
+
+Overfull \hbox (7.93094pt too wide) in paragraph at lines 326--327
+ [][] 
+ []
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 327.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 327.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 329.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 329.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 329.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 329.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 332.
 
 [3]
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 333.
+(Font)              using `JY1/hmc/bx/n' instead on input line 338.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 341.
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 342.
+
+
+LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
+(Font)              using `JY1/hmc/bx/n' instead on input line 350.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 358.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 341.
+(Font)              scaled to size 7.39746pt on input line 358.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 341.
+(Font)              scaled to size 7.39746pt on input line 358.
 No complaints by nag.
 [4
 
 ] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 11229 strings out of 481768
- 197997 string characters out of 5933620
+ 11240 strings out of 481768
+ 198155 string characters out of 5933620
  458135 words of memory out of 5000000
- 26419 multiletter control sequences out of 15000+600000
+ 26428 multiletter control sequences out of 15000+600000
  618162 words of font info for 192 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  49i,10n,46p,467b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (4 pages, 30680 bytes).
+Output written on out/tc-sympo-sample.dvi (4 pages, 31612 bytes).
