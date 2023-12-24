@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1703433503 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1703433504
-  "out/tc-sympo-sample.dvi" 1703433503 32576 02e24a71fefe475f575ed453342cb86c "latex"
+["dvipdf"] 1703435387 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1703435400
+  "out/tc-sympo-sample.dvi" 1703435387 33480 5d0b991cf39f0b202cad3d82a79ed95f "latex"
   (generated)
   "out/tc-sympo-sample.pdf"
-["latex"] 1703433502 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1703433504
+["latex"] 1703435385 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1703435400
   "/etc/texmf/web2c/texmf.cnf" 1670335848 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1703433502 19610 e10e979639d1d321331036859f49859f ""
+  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1703435399 20221 558b10226f58399a61036dd763e644f1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm" 1136768653 6880 f19b8995b61c334d78fc734065f6b4d4 ""
@@ -137,10 +137,12 @@
   "fig/software.pdf" 1703085190 26385 b9aafcd4334f8dbbb86a7082786e2290 ""
   "fig/syuuka.pdf" 1703427179 880578 3f71ab71b20f5db6b432d0fce3a22165 ""
   "fig/takuhai.pdf" 1703427172 912991 153e88c8b983f9759d420c4e79753b14 ""
+  "fig/test1.pdf" 1703435239 258025 0019100b1a38d4914fef5a50ee9b28a9 ""
+  "fig/test2.pdf" 1703435383 368155 cbb1022622ee3c16e300fa23c6ea46a3 ""
   "jsproceedings.cls" 1609129923 23503 31ea80bc6a420cac8ffa562f1f435009 ""
-  "out/tc-sympo-sample.aux" 1703433503 4167 d59760955c4ceca4cc0f6820c077dece "latex"
-  "tc-sympo-sample.tex" 1703433502 19610 e10e979639d1d321331036859f49859f ""
+  "out/tc-sympo-sample.aux" 1703435387 4529 3e30d81185dc337997ee3311552da4c9 "latex"
+  "tc-sympo-sample.tex" 1703435399 20221 558b10226f58399a61036dd763e644f1 ""
   (generated)
-  "out/tc-sympo-sample.dvi"
-  "out/tc-sympo-sample.aux"
   "out/tc-sympo-sample.log"
+  "out/tc-sympo-sample.aux"
+  "out/tc-sympo-sample.dvi"

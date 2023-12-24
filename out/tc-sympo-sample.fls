@@ -344,6 +344,10 @@ INPUT fig/syuuka.pdf
 INPUT extractbb -B cropbox -O fig/syuuka.pdf
 INPUT fig/takuhai.pdf
 INPUT extractbb -B cropbox -O fig/takuhai.pdf
+INPUT fig/test1.pdf
+INPUT extractbb -B cropbox -O fig/test1.pdf
+INPUT fig/test2.pdf
+INPUT extractbb -B cropbox -O fig/test2.pdf
 INPUT fig/result_box2_cut.pdf
 INPUT extractbb -B cropbox -O fig/result_box2_cut.pdf
 INPUT fig/box3_sensor.pdf
