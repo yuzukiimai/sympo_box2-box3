@@ -1,7 +1,7 @@
 \documentclass[twocolumn, 9pt]{jsproceedings}
 \RequirePackage[l2tabu, orthodox]{nag}  % 古いコマンドやパッケージを使用した場合に警告する
 \usepackage[all, warning]{onlyamsmath}  % amsmath が提供しない数式環境を使用した場合に警告する
-\usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
+% \usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
 
 
 
@@ -244,7 +244,7 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
   \label{fig:hako}
 \end{figure}
 
-\vspace*{-2mm}次に，これらの課題を達成するために取り組んだ内容を以下に述べる．
+\vspace*{-2mm}次に，本課題のために取り組んだ内容を以下に述べる．
 
 \begin{itemize}
   \setlength{\leftskip}{-1zw}
@@ -259,9 +259,12 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 次に，収集した画像にボックス 2つ(集荷，宅配)と配達先 3つ(a,b,c)の計5 クラスでラベル付けをした．
 合計2000枚のデータセットを作成し，そのうちの？枚を訓練用，？枚を検証用とした．
 訓練後は，訓練済みモデルを用いてボックスと配送先が認識できるかを検証した．
-ここで，検証結果の一例をに示す．
-このように，ボックスと配送先が高い正確度で認識できることを確認した．
-
+ここで，検証結果の一例を\figref{fig:test1}，\figref{fig:test2}に示す．
+\figref{fig:test1}のように，屋内環境かつ近距離であれば，どちらも高い正確度で認識できた．
+しかし，\figref{fig:test2}の例では，配達先を誤認識した．
+その原因としては，\figref{fig:test1}の例に比べて，対象物とロボットの距離があることや，屋外であるため
+照明条件の変化によって収集したデータセットとの差が発生したのではないかと考えられる．
+\vspace*{0.5mm}
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/test1.pdf}
