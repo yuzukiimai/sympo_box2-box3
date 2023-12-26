@@ -265,7 +265,7 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 その原因としては\figref{fig:test1}の例に比べて，対象物とロボットの距離があることや，屋外の
 日照条件の変化によって，収集した画像との差が発生したことが考えられる．
 
-\vspace*{0.5mm}
+% \vspace*{0.5mm}
 
 \begin{figure}[h!]
   \centering
@@ -304,6 +304,9 @@ LiDARの走査線の配列中の指定した値が一定値以下になったら
 する．ただし，ナビゲーションの起動中は，move\_baseに基づく速度指令値であるnav\_velという名前のトピック
 が配信されており，そのままだと速度指令値が競合するため，どちらの速度指令値を使用するかをtwist\_muxに
 よって判断し，cmd\_velという名前のトピックで配信している．
+本システムを用いて，実験した様子を\figref{fig:action}に示す．
+結果的に，集荷ボックスへの接近と白線停止，50[cm]以内で停止はできたが，走行再開後に宅配ボックスを発見
+できなかった．
 なお，本システムは検証段階であったため，本走行では使用していない．
 %----------------------------------------------------------------------------------------------------------
 
@@ -315,7 +318,28 @@ LiDARの走査線の配列中の指定した値が一定値以下になったら
 \end{figure}
 
 
-
+\begin{figure}[h]
+  \centering
+  \begin{minipage}[b]{0.3\linewidth}
+    \centering
+    \includegraphics[width=31mm]{fig/1.pdf}
+    \caption*{(a) ORNE-box}
+  \end{minipage} 
+  \hspace*{4mm}
+  \begin{minipage}[b]{0.3\linewidth}
+    \centering
+    \includegraphics[height=22.9mm]{fig/2.pdf}
+    \caption*{(b) ORNE-box2}
+  \end{minipage}
+  \hspace*{1.5mm}
+  \begin{minipage}[b]{0.3\linewidth}
+    \centering
+    \includegraphics[height=22.9mm]{fig/3.pdf}
+    \caption*{(c) ORNE-box3}
+  \end{minipage}
+  \caption{ORNE-box-Series}
+  \label{fig:action}
+\end{figure}
 
 
 
