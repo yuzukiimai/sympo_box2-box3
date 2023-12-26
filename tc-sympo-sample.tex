@@ -100,9 +100,9 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
     \scalebox{0.73}{
     \begin{tabular}{|l||c|c|c|}  \hline
       & ORNE-box & ORNE-box2 & ORNE-box3 \\ \hline \hline
-      Depth[mm] & \multicolumn{2}{c|}{600} & ??? \\ \hline
-      Wide[mm] & \multicolumn{2}{c|}{506.5} & ??? \\ \hline
-      Height[mm] & \multicolumn{2}{c|}{957} & ??? \\ \hline
+      Depth[mm] & \multicolumn{2}{c|}{600} & わからん \\ \hline
+      Wide[mm] & \multicolumn{2}{c|}{506.5} & わからん \\ \hline
+      Height[mm] & \multicolumn{2}{c|}{957} & わからん \\ \hline
       Wheel diameter[mm] & \multicolumn{3}{c|}{304}\\ \hline
       Battery & \multicolumn{3}{c|}{LONG WP14-12SE}\\ \hline
       Motor & \multicolumn{3}{c|}{Oriental motor TF-M30-24-3500-G15L/R}\\ \hline
@@ -232,7 +232,7 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
   \begin{minipage}[t]{0.47\linewidth}
     \centering
     \includegraphics[width=44.94mm]{fig/syuuka.pdf}
-    \caption*{(a) Collection box}
+    \caption*{\hspace*{3mm}(a) Collection box}
   \end{minipage}
   \hspace*{2mm}
   \begin{minipage}[t]{0.47\linewidth}
@@ -287,7 +287,7 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 \end{itemize}
 \vspace*{-2.5mm}
 
-指定のボックスへの移動や近づいた後の停止処理，認識後の行動決定などについて述べる．
+指定のボックスへの移動や近づいた後の停止処理，認識後の行動決定などに関して述べる．
 ロボットは\figref{fig:hako_act}に示すようなシステムに基づき行動する．
 本課題は，コースの途中の公園で行うため，ゴールまで設定したwaypointを一度外れる必要がある．
 そのため，本チームが用いている waypointパッケージである waypoint\_managerから，ナビゲーション用に設定した
@@ -308,7 +308,7 @@ LiDARの走査線の配列中の指定した値が一定値以下になったら
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/act.pdf}
-  \caption{Recognition results in indoor.}
+  \caption{Summary of the developed system.}
   \label{fig:hako_act}
 \end{figure}
 
@@ -318,21 +318,21 @@ LiDARの走査線の配列中の指定した値が一定値以下になったら
   \begin{minipage}[b]{0.3\linewidth}
     \centering
     \includegraphics[width=31mm]{fig/1.pdf}
-    \caption*{(a) ORNE-box}
+    \caption*{\hspace*{2.5mm}(a) Found the box}
   \end{minipage} 
   \hspace*{2.8mm}
   \begin{minipage}[b]{0.3\linewidth}
     \centering
     \includegraphics[height=22.9mm]{fig/2.pdf}
-    \caption*{(b) ORNE-box2}
+    \caption*{\hspace*{1.1mm}(b) White line stop}
   \end{minipage}
   \hspace*{0.5mm}
   \begin{minipage}[b]{0.3\linewidth}
     \centering
     \includegraphics[height=22.9mm]{fig/3.pdf}
-    \caption*{(c) ORNE-box3}
+    \caption*{\hspace*{3mm}(c) Stop near box}
   \end{minipage}
-  \caption{ORNE-box-Series}
+  \caption{Verification of the developed system.}
   \label{fig:action}
 \end{figure}
 
@@ -345,7 +345,7 @@ box2チームの本年度の本走行の記録は，715[m]であった．
 リタイアした地点は，公園前の信号機あり横断歩道である．
 \figref{fig:box2-result}に示すように，本来は一時停止が必要な場所で，ロボットが道路端からはみ出した．
 原因としては，自己位置推定の破綻が挙げられる．信号機周辺は他チームのロボットや通行人，自動車など，
-その都度環境が大きく変化するため，作成した地図とマッチングしない，あるいは誤った場所でのマッチング
+環境がその都度大きく変化するため，作成した地図とマッチングしない，あるいは誤った場所でのマッチング
 が起こったのではないかと考えられる．
 なお box2チームは，8月18日に実施されたつくばチャレンジ2023EX＠イーアスつくば本走行にて完走している．
 
@@ -357,6 +357,7 @@ box2チームの本年度の本走行の記録は，715[m]であった．
 \end{figure}
 
 \subsection{box3チームの取り組み}
+ここからはまだ手をつけていませんんんんんんんんんんんんんんんんんんんんんんんんんんんんんんんんんんんん
 ROS2 Dockerなど、、、
 本年度の取り組みを以下で紹介する．
 
@@ -405,6 +406,7 @@ box2 チームとは異なり，使用した LiDARは 1つである．
 
 \subsubsection{本走行の結果}
 ああああ
+box3の本走行の記録は13[m]だったちきしょー
 記録走行では431[m]
 
 
