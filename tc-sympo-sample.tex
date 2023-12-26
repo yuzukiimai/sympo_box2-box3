@@ -1,7 +1,7 @@
 \documentclass[twocolumn, 9pt]{jsproceedings}
 \RequirePackage[l2tabu, orthodox]{nag}  % 古いコマンドやパッケージを使用した場合に警告する
 \usepackage[all, warning]{onlyamsmath}  % amsmath が提供しない数式環境を使用した場合に警告する
-% \usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
+\usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
 
 
 
@@ -112,9 +112,9 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
       3D-LiDAR & None & \multicolumn{2}{c|}{R-fans-16} \\
       & & \multicolumn{2}{c|}{(SureStar)}\\ \hline
       IMU & ADIS16465 & ADIS16470 & None\\ 
-      & (Analog devices) & (Analog devices) & \\ \hline
+      & (Analog Devices) & (Analog Devices) & \\ \hline
       Camera & None & \multicolumn{2}{c|}{CMS-V43BK}\\ 
-      & & \multicolumn{2}{c|}{(Sanwa supply)}\\ \hline
+      & & \multicolumn{2}{c|}{(SANWA SUPPLY)}\\ \hline
       Computer & None & Jetson AGX Xavier & Jetson Orin NX\\ 
       & & (NVIDIA) & (NVIDIA)\\ \hline
     \end{tabular}
@@ -165,7 +165,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=90mm]{fig/box2_sensor_cut2.pdf}
+  \includegraphics[width=90mm]{fig/box2_sensor.pdf}
   \caption{The sensor configuration of the box2 team.}
   \label{fig:box2-sensor}
 \end{figure}
@@ -233,7 +233,6 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 6）指定の宅配ボックス\figref{fig:hako} (b)を探索
 
 7）指定の宅配ボックスに50[cm]まで接近し，3秒以上停止
-
 \begin{figure}[h!]
   \begin{minipage}[t]{0.47\linewidth}
     \centering
@@ -245,12 +244,11 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
     \centering
     \includegraphics[width=44.21mm]{fig/takuhai.pdf}
     \caption*{(b) ORNE-box2}
-  \end{minipage}%\vspace*{2mm}
+  \end{minipage}
   \caption{Number of return to path}
   \label{fig:hako}
-\end{figure}
-
-\vspace*{-2mm}次に，本課題のために取り組んだ内容を以下に述べる．
+\end{figure}\vspace*{-2mm}
+次に，本課題のために取り組んだ内容を以下に述べる．
 
 \begin{itemize}
   \setlength{\leftskip}{-1zw}
@@ -258,20 +256,22 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 \end{itemize}
 \vspace*{-2.5mm}
 
-各ボックスや配達先のタグの認識には，YOLOv5\cite{yolo}を用いた．YOLOは画像を入力すると，対象とした物体が
+各ボックスや配達先の認識には，YOLOv5\cite{yolo}を用いた．YOLOは画像を入力すると，対象物が
 画像中のどこにあるかを表すバウンディングボックスと認識率を出力する．
 本課題の各ボックスと配達先の認識ために，データセットを作成した．
-手順としては，まず ORNE-box2の上部に取り付けたカメラを使用し，現地で画像を収集した．
+作成したデータセットは\cite{nagashima}で公開している．
+手順としては，まず ORNE-box2の上部に取り付けたカメラを使用し，現地と千葉工業大学津田沼キャンパスで
+画像を収集した．2261 26
 次に，収集した画像にボックス 2つ(集荷，宅配)と配達先 3つ(a,b,c)の計5 クラスでラベル付けをした．
-合計2000枚のデータセットを作成し，そのうちの？枚を訓練用，？枚を検証用とした．
+合計2287個のデータセットを作成し，そのうちの2261個を訓練用，を26個を検証用とした．
 訓練後は，訓練済みモデルを用いてボックスと配送先が認識できるかを検証した．
 ここで，検証結果の一例を\figref{fig:test1}，\figref{fig:test2}に示す．
 \figref{fig:test1}のように，屋内環境かつ近距離であれば，どちらも高い正確度で認識できた．
-しかし，\figref{fig:test2}の例では，配達先を誤認識した．
-その原因としては，\figref{fig:test1}の例に比べて，対象物とロボットの距離があることや，屋外であるため
-照明条件の変化によって収集したデータセットとの差が発生したのではないかと考えられる．
+しかし，\figref{fig:test2}の例では配達先を誤認識した．
+その原因としては\figref{fig:test1}の例に比べて，対象物とロボットの距離があることや，屋外の
+日照条件の変化によりデータセットとの差が発生したことが考えられる．
 
-\vspace*{0.5mm}
+% \vspace*{0.5mm}
 
 \begin{figure}[h!]
   \centering
@@ -458,6 +458,11 @@ GIMP 公式ドキュメント\\
 \bibitem{yolo}
 ultralytics, yolov5 リポジトリ\\
 \url{https://github.com/ultralytics/yolov5}\\
+(最終閲覧日：\today)
+
+\bibitem{nagashima}
+NagashimaKousei, Tsukuba\_Delivery リポジトリ\\
+\url{https://github.com/NagashimaKousei/Tsukuba_Delivery}\\
 (最終閲覧日：\today)
 
 

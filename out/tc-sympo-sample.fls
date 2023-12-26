@@ -131,6 +131,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/nag/nag-orthodox.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nag/nag-orthodox.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/onlyamsmath/onlyamsmath.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/onlyamsmath/onlyamsmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texlive/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
@@ -327,8 +331,8 @@ INPUT extractbb -B cropbox -O fig/box3.pdf
 OUTPUT out/tc-sympo-sample.dvi
 INPUT fig/software.pdf
 INPUT extractbb -B cropbox -O fig/software.pdf
-INPUT fig/box2_sensor_cut2.pdf
-INPUT extractbb -B cropbox -O fig/box2_sensor_cut2.pdf
+INPUT fig/box2_sensor.pdf
+INPUT extractbb -B cropbox -O fig/box2_sensor.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
