@@ -359,15 +359,25 @@ box2チームの本年度の本走行の記録は，715[m]であった．
 
 \subsection{box3チームの取り組み}
 2.2節でも述べたように，本研究室では従来より ROS を用いたロボットの自律走行システムを開発してきた．
-ただし，開発したシステムは ROS 1 のパッケージで構成されており，
+ただし，開発したシステムは ROS 1 で構成されており，
 ROS 1は，Noetic のリリースを最後に2025年で開発サポートが終了するという問題がある．
 サポートが終了すると，新たなシステムが開発できなくなるため，
 早急に現在の ROS 1 のシステムを ROS 2 のシステムへ移行させることが必要であった．
 
-よって，box3 チームは現在のシステムを ROS 2に移行し，信号付近までロボットを自律走行させることを目標とした．
+よって，box3 チームは現在のシステムを ROS 2に移行し，ロボットを信号付近まで自律走行させることを目標とした．
 本年度の取り組みを以下で紹介する．
 
 \subsubsection{システムの ROS 2 移行}
+ORNE-box3 では，制御コンピュータに Jetson Orin NX を用いている．
+Jetson の OS である JetPackは，現行のものでは，Ubuntu 20.04 がベースとなっており，それに対応する ROS 2 の
+バージョンは Foxy\cite{foxy} である．しかし，Foxy では ROS 2 のトピックを 可視化するツールである Rviz 2 
+のバグがあることや，Nav2\cite{nav2} の機能が制限されること，サポート期限が間近に迫っていることなどの
+問題がある．
+
+これらの問題を解決するため，開発環境をネイティブからDockerへ移行した．
+これにより，ネイティブでは使用できなかった Foxy 以降のバージョンが使用可能となった．
+本チームは，Docker 環境で ROS 2 Humble\cite{humble}を用いて開発を行った．
+
 
 \subsubsection{センサ・システム構成}
 box3 チームは，LiDAR，ホイールエンコーダ，RGBカメラというセンサ構成で実験走行および本走行に臨んだ．
@@ -493,7 +503,7 @@ cartographer-project, cartographer リポジトリ\\
 (最終閲覧日：\today)
 
 \bibitem{gimp}
-GIMP 公式ドキュメント\\
+GIMP ドキュメント\\
 \url{https://www.gimp.org/}\\
 (最終閲覧日：\today)
 
@@ -510,6 +520,21 @@ ultralytics, yolov5 リポジトリ\\
 \bibitem{nagashima}
 NagashimaKousei, Tsukuba\_Delivery リポジトリ\\
 \url{https://github.com/NagashimaKousei/Tsukuba_Delivery}\\
+(最終閲覧日：\today)
+
+\bibitem{foxy}
+ROS 2 Foxy ドキュメント\\
+\url{https://docs.ros.org/en/foxy/index.html}\\
+(最終閲覧日：\today)
+
+\bibitem{nav2}
+Nav2 ドキュメント\\
+\url{https://navigation.ros.org/}\\
+(最終閲覧日：\today)
+
+\bibitem{humble}
+ROS 2 Humble ドキュメント\\
+\url{https://docs.ros.org/en/humble/index.html}\\
 (最終閲覧日：\today)
 
 
