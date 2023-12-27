@@ -283,26 +283,29 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 
 \begin{itemize}
   \setlength{\leftskip}{-1zw}
-  \item ロボットの行動決定
+  \item ボックスに接近し，停止するシステムの作成
 \end{itemize}
 \vspace*{-2.5mm}
 
-指定のボックスへの移動や近づいた後の停止処理，認識後の行動決定などに関して述べる．
+配達先を認識した後の指定のボックスへの移動や接近して停止する処理に関して述べる．
 ロボットは\figref{fig:hako_act}に示すようなシステムに基づき行動する．
-本システムは，YOLOからのタグの認識結果に応じて，配達先を決定している．
-配達先a,b,cすべてにウェイポイントを配置し，認識結果に応じてウェイポイントをスキップするという実装とした．
-行動を開始するための条件はwaypointにあらかじめフラグを設定し，フラグが真のwaypointに到達することとした．
-waypointに到達したときにボックスに近づくプログラムを開始した．
-ボックスへの接近は，YOLOの出力であるバウンディングボックスの座標に基づき行われる．具体的には，対象の
-ボックスが常にカメラ画像の中心に来るように速度指令値をロボットに送る．この速度指令値はyolo\_velという
-名前のトピックで配信される．ボックスに近づいたと判断する指標は，LiDARの走査線である。
-LiDARの走査線の配列中の指定した値が一定値以下になったら，ロボットとボックスが 50[cm]近づいたと判断して停止
-する．ただし，ナビゲーションの起動中は，move\_baseに基づく速度指令値であるnav\_velという名前のトピック
-が配信されており，そのままだと速度指令値が競合するため，どちらの速度指令値を使用するかをtwist\_muxに
+本システムは，YOLOの配達先の認識結果に応じて行動を決定する．
+具体的には，配達先(a,b,c)すべてに waypointを配置し，認識した配達先以外の waypointはスキップする仕組みと
+なっている．
+ボックスへの接近は，指定の waypointに到達すると開始され，YOLOの出力であるバウンディングボックスの座標に
+基づき行われる．
+これは，ボックスが常にカメラ画像の中心に来るように速度指令値をロボットに送ることで行う．
+この速度指令はyolo\_velという名前のトピックで配信される．
+ボックスに近づいたと判断する指標は，LiDARの走査線である．
+LiDARの走査線の配列中の指定した値がある一定値以下になったら，ロボットとボックスが 50[cm]近づいたと
+判断して停止する．
+ただし，ナビゲーションの起動中は，move\_baseに基づく速度指令であるnav\_velという名前のトピック
+が配信されており，そのままだと速度指令が競合するため，どちらの速度指令を使用するかをtwist\_muxに
 よって判断し，cmd\_velという名前のトピックで配信している．
 ここで，本システムを用いた実験の様子を\figref{fig:action}に示す．
-結果的に，集荷ボックスへの接近と50[cm]以内で停止はできたが，走行再開後に宅配ボックスを発見したものの認識が行動の
-途中で途切れてしまった．その対策としては，認識が途切れてから数秒以内は行動させ続けるというデッドタイムを設ける方法が考えられる．
+結果的に，集荷ボックスを発見して 50[cm]以内で停止はできたが，
+走行再開後に宅配ボックスの認識が途切れてしまった．
+その対策としては，認識が途切れてから数秒以内は行動を続けるというデッドタイムを設ける方法が考えられる．
 なお，本システムは検証段階であったため，本走行では使用していない．
 
 \begin{figure}[h!]
@@ -312,27 +315,20 @@ LiDARの走査線の配列中の指定した値が一定値以下になったら
   \label{fig:hako_act}
 \end{figure}
 
-
-
+\vspace*{-1zh}
 
 \begin{figure}[h]
   \centering
-  \begin{minipage}[b]{0.3\linewidth}
+  \begin{minipage}[b]{0.45\linewidth}
     \centering
-    \includegraphics[width=31mm]{fig/1.pdf}
-    \caption*{\hspace*{2.5mm}(a) Found the box}
+    \includegraphics[width=37mm]{fig/1.pdf}
+    \caption*{(a) Found the box}
   \end{minipage} 
-  \hspace*{2.8mm}
-  \begin{minipage}[b]{0.3\linewidth}
+  \hspace*{2mm}
+  \begin{minipage}[b]{0.45\linewidth}
     \centering
-    \includegraphics[height=22.9mm]{fig/2.pdf}
-    \caption*{\hspace*{1.1mm}(b) White line stop}
-  \end{minipage}
-  \hspace*{0.5mm}
-  \begin{minipage}[b]{0.3\linewidth}
-    \centering
-    \includegraphics[height=22.9mm]{fig/3.pdf}
-    \caption*{\hspace*{3mm}(c) Stop near box}
+    \includegraphics[height=27.2mm]{fig/3.pdf}
+    \caption*{(b) Stop near the box}
   \end{minipage}
   \caption{Verification of the developed system.}
   \label{fig:action}

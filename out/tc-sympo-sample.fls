@@ -352,8 +352,6 @@ INPUT fig/act.pdf
 INPUT extractbb -B cropbox -O fig/act.pdf
 INPUT fig/1.pdf
 INPUT extractbb -B cropbox -O fig/1.pdf
-INPUT fig/2.pdf
-INPUT extractbb -B cropbox -O fig/2.pdf
 INPUT fig/3.pdf
 INPUT extractbb -B cropbox -O fig/3.pdf
 INPUT fig/result_box2_cut.pdf
