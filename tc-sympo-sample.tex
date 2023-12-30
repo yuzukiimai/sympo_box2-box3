@@ -50,7 +50,7 @@
 
 本稿では，このような問題を解決するためにつくばチャレンジ2023に向けて取り組んだ内容を紹介する．
 
-\section{開発したロボットとシステム}
+\section{開発したロボット}
 ロボットを常に屋外環境で走行させるためには，防水設計が求められる．ただし，防水性を担保しながら
 ロボットの機構や電気回路の追加・変更を行うことは，作業の負担が大きく，多くの時間を要するため，
 新たなアルゴリズムの開発や検証に十分な時間を割当てられないことが問題となっていた．
@@ -60,8 +60,8 @@
 これらのロボットは，屋外での自律走行を目的としており，屋外自律走行の研究開発に必要な機能をパッケージ化
 し，提供することを目標に開発を行っている．設計データなどは，ウェブページ上にて順次公開している\cite{box-data}．
 
-ORNE-box2 は，ORNE-box の問題点を洗い出し改善を図るという方針のもと，昨年度から開発を行っている．
-センサ構成などに差異はあるが，基本的なシステム構成は同じである．
+ORNE-box2 は，ORNE-box の問題点をリストアップし改善を図るという方針のもと，昨年度から開発している．
+センサ構成などに差異はあるが，基本的なシステムは同じである．
 
 ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性能や拡張性をさらに改善した設計となっている．
 
@@ -124,10 +124,10 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
 
 \subsection{ソフトウェア}
 本研究室では，従来より ROS(Robot Operating System)のnavigation stack\cite{navigation}を基に開発された
-システムであるorne\_navigation\cite{orne-navigation} と orne\_box\cite{orne-box} により，ロボットを自律走行させている．
-\figref{fig:soft-fig}に開発しているロボットのソフトウェアを含むシステム構成を示す．
+ソフトウェアであるorne\_navigation\cite{orne-navigation} と orne\_box\cite{orne-box} により，ロボットを自律走行させている．
+\figref{fig:soft-fig}に開発したロボットのソフトウェアを含むシステム構成を示す．
 このシステムは，LiDARなど複数のセンサを用いた Monte Carlo Localization(MCL)により確率的に自己位置を推定し， 
-経路計画に基づいて自律走行している．なお，両ソフトウェアは GitHubのopen-rdc\cite{open-rdc} で公開している．
+経路計画に基づいて自律走行する．なお，両ソフトウェアは GitHubのopen-rdc\cite{open-rdc} で公開している．
 
 \begin{figure}[h!]
   \centering
