@@ -347,7 +347,7 @@ box2チームの本年度の本走行の記録は，715[m]であった．
 リタイアした地点は，公園前の信号機あり横断歩道である．
 \figref{fig:box2-result}に示すように，本来は一時停止が必要な場所で，ロボットが道路端からはみ出した．
 原因としては，自己位置推定の破綻が挙げられる．信号機周辺は他チームのロボットや通行人，自動車など，
-環境がその都度大きく変化するため，作成した地図とマッチングしない，あるいは誤った場所でのマッチング
+環境がその都度大きく変化するため，作成した地図とマッチングしない，あるいは間違った場所でのマッチング
 が起こったのではないかと考えられる．
 なお box2チームは，8月18日に実施されたつくばチャレンジ2023EX＠イーアスつくば本走行にて完走している．
 
@@ -395,15 +395,17 @@ box2 チームとは異なり，使用した LiDARは 1つである．
 
 
 ここで，自律走行時のシステムの概要を\figref{fig:box3-system}に示す．
-
+本チームは，ROS 2 で開発を行うため，従来の 
+本システムは，3D-LiDARであるRfansから得られた3次元点群を pointcloud\_to\_laserscan によって，
+なお，図の青色で示したものは自作のノードとなっている．
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/box3_system.pdf}
-  \caption{The sensor configuration of the box3 team.}
+  \caption{Overview of the system during autonomous driving.}
   \label{fig:box3-system}
 \end{figure}
 
-
+\newpage
 \subsubsection{信号認識}
 ああああああ
 
