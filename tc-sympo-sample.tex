@@ -302,7 +302,7 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 LiDARの走査線の配列中の指定した値がある一定値以下になったら，ロボットとボックスが 50[cm]近づいたと
 判断して停止する．
 ただし，ナビゲーションの起動中は，move\_baseに基づく速度指令であるnav\_velという名前のトピック
-が配信されており，そのままだと速度指令が競合するため，どちらの速度指令を使用するかをtwist\_muxに
+が配信されており，そのままだと速度指令が競合するため，どちらの速度指令を使用するかをtwist\_mux\cite{twist}に
 よって判断し，cmd\_velという名前のトピックで配信している．
 ここで，本システムを用いた実験の様子を\figref{fig:action}に示す．
 結果的に，集荷ボックスを発見して 50[cm]以内で停止はできたが，
@@ -533,6 +533,11 @@ ultralytics, yolov5 リポジトリ\\
 \bibitem{nagashima}
 NagashimaKousei, Tsukuba\_Delivery リポジトリ\\
 \url{https://github.com/NagashimaKousei/Tsukuba_Delivery}\\
+(最終閲覧日：\today)
+
+\bibitem{twist}
+ROS wiki, twist\_mux\\
+\url{https://wiki.ros.org/twist_mux}\\
 (最終閲覧日：\today)
 
 \bibitem{noetic}

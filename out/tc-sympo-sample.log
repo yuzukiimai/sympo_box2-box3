@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  1 JAN 2024 00:18
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  1 JAN 2024 00:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1347,18 +1347,18 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 7.39746pt on input line 465.
 No complaints by nag.
 - LAST -
-Extra skip:39.20738pt
+Extra skip:6.20738pt
 Left:611.92236pt/1.77777pt
-Right:573.06082pt/1.43193pt
-Output:607.61122pt
+Right:606.06082pt/1.43193pt
+Output:608.11122pt
 [5] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 11678 strings out of 481768
- 204040 string characters out of 5933620
- 485081 words of memory out of 5000000
- 26853 multiletter control sequences out of 15000+600000
+ 11679 strings out of 481768
+ 204047 string characters out of 5933620
+ 477081 words of memory out of 5000000
+ 26854 multiletter control sequences out of 15000+600000
  618162 words of font info for 192 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  53i,10n,47p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (5 pages, 43236 bytes).
+Output written on out/tc-sympo-sample.dvi (5 pages, 43436 bytes).
