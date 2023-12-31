@@ -427,21 +427,30 @@ icart drive\cite{icart_driver} である．
 \end{figure}
 
 \subsubsection{信号認識}
-あああ
+box3 チームでは，信号認識にも取り組んだ．
+信号の認識には，先述の選択課題 D1 と同様に YOLOv5を用いた．
+データセットには自作のものを使用した．
+作成の手順としては，まず ORNE-box3の上部に取り付けたカメラを使用し，現地で画像を収集した．
+次に，収集した画像に信号の色 2つ(青，赤)の2 クラスでラベル付けをした．
+合計600個のデータセットを作成し，そのうちの523個を訓練用，77個を検証用とした．
+訓練後は，訓練済みモデルを用いて信号の色が認識できるかを検証した．
+ここで，検証結果の一例を\figref{fig:test1}，\figref{fig:test2}に示す．
+\figref{fig:test1}のように，青信号と赤信号のどちらも高い正確度で認識できた．
+
 
 \begin{figure}[h!]
   \begin{minipage}[t]{0.47\linewidth}
     \centering
     \includegraphics[width=45mm]{fig/blue_cut.pdf}
-    \caption*{(a) ORNE-box2}
+    \caption*{(a) Blue light (traffic)}
   \end{minipage}
   \hspace*{2mm}
   \begin{minipage}[t]{0.47\linewidth}
     \centering
     \includegraphics[width=45mm]{fig/red_cut.pdf}
-    \caption*{(b) ORNE-box2}
+    \caption*{(b) Red light (traffic)}
   \end{minipage}%\vspace*{2mm}
-  \caption{Number of return to path}
+  \caption{Recognition results in real environment.}
 \end{figure}
 
 \subsubsection{本走行の結果}
