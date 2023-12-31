@@ -395,9 +395,10 @@ box2 チームとは異なり，使用した LiDARは 1つである．
 \end{figure}
 
 
-さらに，自律走行時のシステムの概要を\figref{fig:box3-system}に示す．
+さらに，自律走行時のシステムを\figref{fig:box3-system}に示す．
 ロボットは，これらのパッケージと予め作成した地図を用いて自律走行する．
-
+具体的には，3D-LiDAR である Rfans から得られた3次元点群を pointcloud\_to\_laserscan により圧縮した
+2次元点群と オドメトリ から amclパッケージを用いて自己位置推定を行う．
 box3 チームは，ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
 よって，本研究室が従来から開発してきた ROS 1 のパッケージをそのまま使用することはできない．
 この問題を解決する手段として ros1\_bridge パッケージの使用が挙げられる．
@@ -405,14 +406,13 @@ box3 チームは，ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換�
 しかし，ターミナルでの操作が多く，システムの起動に多くの時間を要することが欠点である．
 デバックの面でもそれは相応しくない．
 移行しなければならない． 
-本システムは，3D-LiDARであるRfansから得られた3次元点群を pointcloud\_to\_laserscan によって，
 なお，図の青色で示したものは自作のノードとなっている．
 
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/box3_system.pdf}
-  \caption{Overview of the system during autonomous driving.}
+  \caption{Summary of the system during autonomous driving.}
   \label{fig:box3-system}
 \end{figure}
 
