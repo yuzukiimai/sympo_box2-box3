@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  31 DEC 2023 20:45
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  31 DEC 2023 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -545,11 +545,7 @@ See the caption package documentation for explanation.
 \c@continuedfloat=\count342
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
-) (out/tc-sympo-sample.aux
-
-LaTeX Warning: Label `icart' multiply defined.
-
-)
+) (out/tc-sympo-sample.aux)
 \openout1 = `tc-sympo-sample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -1355,18 +1351,14 @@ Extra skip:39.20738pt
 Left:611.92236pt/1.77777pt
 Right:573.06082pt/1.43193pt
 Output:607.61122pt
-[5] (out/tc-sympo-sample.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[5] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 11677 strings out of 481768
- 204026 string characters out of 5933620
+ 11678 strings out of 481768
+ 204040 string characters out of 5933620
  485081 words of memory out of 5000000
- 26852 multiletter control sequences out of 15000+600000
+ 26853 multiletter control sequences out of 15000+600000
  618162 words of font info for 192 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  53i,10n,47p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (5 pages, 43296 bytes).
+Output written on out/tc-sympo-sample.dvi (5 pages, 43272 bytes).
