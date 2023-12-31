@@ -396,23 +396,21 @@ box2 チームとは異なり，使用した LiDARは 1つである．
 
 
 さらに，自律走行時のシステムを\figref{fig:box3-system}に示す．
-ロボットは，これらのパッケージと予め作成した占有格子地図を用いて自律走行する．
-具体的には，3D-LiDAR である R-Fans から得られた3次元点群を pointcloud\_to\_laserscan によって
+ロボットは，これらのパッケージと\figref{fig:3-map}に示す地図を用いて自律走行する．
+具体的には，3D-LiDAR である R-Fans から得られた3次元点群を pointcloud\_to\_laserscan により
 2次元点群に圧縮する．これは scan という名前のトピックで配信され，
 ホイールオドメトリである odom の情報と併用して amcl\cite{amcl} によって自己位置推定をする．
 その結果に基づき，予め設定した waypoint へと向かう経路を NavFn\cite{navfn} で生成する．
 ロボットはこの経路に従って移動するが，速度指令は cmd\_vel という名前のトピックで配信される．
-cmd\_vel の受け取り先は，移動ロボットのモーション制御ソフトウェアの ypspur\cite{ypspur} を基にした 
-icart drive である．
+cmd\_vel の受取先は，移動ロボットのモーション制御ソフトウェアの ypspur\cite{ypspur} を基にした 
+icart drive\cite{icart_driver} である．
 なお box3 チームは ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
-つまり，本研究室が従来から開発してきた ROS 1 のパッケージをそのまま使用することはできない．
-この問題を解決する手段として ros1\_bridge の使用が挙げられる．
+つまり，本研究室が従来から開発してきた ROS 1 のパッケージを含むシステムをそのまま使用することはできない．
+この問題を解決する手段として ros1\_bridge\cite{bridge} の使用が挙げられる．
 これは，ROS 2 環境でROS 1 パッケージの使用を可能とするものである．
-しかし，ターミナルでの操作が多く，システムの起動に多くの時間を要することが欠点である．
-デバックの面でもそれは望ましくない．
-よって，不足しているパッケージおよびノードは開発した． 
-図の青色で示したものが自作のノードとなっている．
-
+しかし，ターミナルでの操作が多いため，システムの起動に多くの時間を要することが欠点である．
+よって，不足しているパッケージおよびノードは本チームで開発した． 
+\figref{fig:box3-system}の青色で示すものが自作のパッケージおよびノードである．
 
 \begin{figure}[h!]
   \centering
@@ -421,9 +419,15 @@ icart drive である．
   \label{fig:box3-system}
 \end{figure}
 
-\newpage
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=90mm]{fig/3-map.pdf}
+  \caption{Map created by box3 team. (for planning)}
+  \label{fig:3-map}
+\end{figure}
+
 \subsubsection{信号認識}
-ああああああ
+あああ
 
 \begin{figure}[h!]
   \begin{minipage}[t]{0.47\linewidth}
@@ -584,6 +588,13 @@ openspur, ypspur\_ros リポジトリ\\
 open-rdc, icart\_mini\_driver リポジトリ\\
 \url{https://github.com/open-rdc/icart_mini_driver}\\
 (最終閲覧日：\today)
+
+\bibitem{bridge}
+ros2, ros1\_bridge リポジトリ\\
+\url{https://github.com/ros2/ros1_bridge}\\
+(最終閲覧日：\today)
+
+
 
 
 

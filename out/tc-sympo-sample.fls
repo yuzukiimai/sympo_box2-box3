@@ -360,6 +360,8 @@ INPUT fig/box3_sensor.pdf
 INPUT extractbb -B cropbox -O fig/box3_sensor.pdf
 INPUT fig/box3_system.pdf
 INPUT extractbb -B cropbox -O fig/box3_system.pdf
+INPUT fig/3-map.pdf
+INPUT extractbb -B cropbox -O fig/3-map.pdf
 INPUT fig/blue_cut.pdf
 INPUT extractbb -B cropbox -O fig/blue_cut.pdf
 INPUT fig/red_cut.pdf
