@@ -399,12 +399,12 @@ box2 チームとは異なり，使用した LiDARは 1つである．
 ロボットは，これらのパッケージと予め作成した占有格子地図を用いて自律走行する．
 具体的には，3D-LiDAR である R-Fans から得られた3次元点群を pointcloud\_to\_laserscan によって
 2次元点群に圧縮する．これは scan という名前のトピックで配信され，
-ホイールオドメトリである odom の情報と併用して amcl によって自己位置推定をする．
-その結果に基づき，予め設定した waypoint へと向かう経路を NavFn で生成する．
+ホイールオドメトリである odom の情報と併用して amcl\cite{amcl} によって自己位置推定をする．
+その結果に基づき，予め設定した waypoint へと向かう経路を NavFn\cite{navfn} で生成する．
 ロボットはこの経路に従って移動するが，速度指令は cmd\_vel という名前のトピックで配信される．
-cmd\_vel の受け取り先は，移動ロボットのモーション制御ソフトウェアの ypspur を基にした icart drive 
-である．
-なお，box3 チームは，ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
+cmd\_vel の受け取り先は，移動ロボットのモーション制御ソフトウェアの ypspur\cite{ypspur} を基にした 
+icart drive である．
+なお box3 チームは ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
 つまり，本研究室が従来から開発してきた ROS 1 のパッケージをそのまま使用することはできない．
 この問題を解決する手段として ros1\_bridge の使用が挙げられる．
 これは，ROS 2 環境でROS 1 パッケージの使用を可能とするものである．
@@ -568,6 +568,16 @@ ROS 2 Humble ドキュメント\\
 \bibitem{amcl}
 Nav2 amcl ドキュメント\\
 \url{https://navigation.ros.org/configuration/packages/configuring-amcl.html}\\
+(最終閲覧日：\today)
+
+\bibitem{navfn}
+Nav2 NavFn Planner ドキュメント\\
+\url{https://navigation.ros.org/configuration/packages/configuring-navfn.html}\\
+(最終閲覧日：\today)
+
+\bibitem{ypspur}
+openspur, ypspur\_ros リポジトリ\\
+\url{https://github.com/openspur/ypspur_ros}\\
 (最終閲覧日：\today)
 
 \bibitem{icart_driver}

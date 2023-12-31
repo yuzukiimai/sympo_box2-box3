@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  1 JAN 2024 02:22
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  1 JAN 2024 02:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1350,20 +1350,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 569--572
 []$\T1/lmtt/m/n/8 https : / / navigation . ros . org / configuration / packages /
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--577
+[]$\T1/lmtt/m/n/8 https : / / navigation . ros . org / configuration / packages /
+ []
+
 No complaints by nag.
 - LAST -
-Extra skip:6.16154pt
-Left:633.92236pt/1.73193pt
-Right:628.06082pt/1.43193pt
-Output:640.11122pt
+Extra skip:17.20738pt
+Left:677.92236pt/1.77777pt
+Right:661.06082pt/1.43193pt
+Output:673.61122pt
 [5] (out/tc-sympo-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 11680 strings out of 481768
- 204053 string characters out of 5933620
- 488081 words of memory out of 5000000
- 26855 multiletter control sequences out of 15000+600000
+ 11682 strings out of 481768
+ 204068 string characters out of 5933620
+ 491081 words of memory out of 5000000
+ 26857 multiletter control sequences out of 15000+600000
  618162 words of font info for 192 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  53i,10n,47p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (5 pages, 44664 bytes).
+Output written on out/tc-sympo-sample.dvi (5 pages, 45176 bytes).
