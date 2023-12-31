@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  1 JAN 2024 03:53
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2023.5.31)  1 JAN 2024 03:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1370,31 +1370,31 @@ LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 463.
+(Font)              using `JY1/hmc/bx/n' instead on input line 462.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 467.
+(Font)              using `JY1/hmc/bx/n' instead on input line 466.
 
 
 LaTeX Font Warning: Font shape `JY1/hmc/b/n' undefined
-(Font)              using `JY1/hmc/bx/n' instead on input line 475.
+(Font)              using `JY1/hmc/bx/n' instead on input line 474.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 483.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 482.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 483.
+(Font)              scaled to size 7.39746pt on input line 482.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 483.
+(Font)              scaled to size 7.39746pt on input line 482.
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--585
+Underfull \hbox (badness 10000) in paragraph at lines 581--584
 []$\T1/lmtt/m/n/8 https : / / navigation . ros . org / configuration / packages /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--590
+Underfull \hbox (badness 10000) in paragraph at lines 586--589
 []$\T1/lmtt/m/n/8 https : / / navigation . ros . org / configuration / packages /
  []
 
@@ -1414,4 +1414,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  49i,10n,46p,847b,985s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/tc-sympo-sample.dvi (5 pages, 46892 bytes).
+Output written on out/tc-sympo-sample.dvi (5 pages, 46952 bytes).
