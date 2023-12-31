@@ -91,7 +91,7 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
   \label{fig:orne-series}
 \end{figure}
 
-\vspace*{-4mm}
+\vspace*{-8mm}
 
 \begin{table}[h!]
   \centering
@@ -100,9 +100,10 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
     \scalebox{0.73}{
     \begin{tabular}{|l||c|c|c|}  \hline
       & ORNE-box & ORNE-box2 & ORNE-box3 \\ \hline \hline
-      Depth[mm] & \multicolumn{2}{c|}{600} & わからん \\ \hline
-      Wide[mm] & \multicolumn{2}{c|}{506.5} & わからん \\ \hline
-      Height[mm] & \multicolumn{2}{c|}{957} & わからん \\ \hline
+      Depth[mm] & \multicolumn{3}{c|}{600}\\ \hline
+      Width[mm] & \multicolumn{3}{c|}{506.5}\\ \hline
+      Height[mm] & \multicolumn{3}{c|}{957}\\ \hline
+      Weight[kg] & \multicolumn{3}{c|}{32}\\ \hline
       Wheel diameter[mm] & \multicolumn{3}{c|}{304}\\ \hline
       Battery & \multicolumn{3}{c|}{LONG WP14-12SE}\\ \hline
       Motor & \multicolumn{3}{c|}{Oriental motor TF-M30-24-3500-G15L/R}\\ \hline
@@ -394,10 +395,20 @@ box2 チームとは異なり，使用した LiDARは 1つである．
 \end{figure}
 
 
-ここで，自律走行時のシステムの概要を\figref{fig:box3-system}に示す．
-本チームは，ROS 2 で開発を行うため，従来の 
+さらに，自律走行時のシステムの概要を\figref{fig:box3-system}に示す．
+ロボットは，これらのパッケージと予め作成した地図を用いて自律走行する．
+
+box3 チームは，ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
+よって，本研究室が従来から開発してきた ROS 1 のパッケージをそのまま使用することはできない．
+この問題を解決する手段として ros1\_bridge パッケージの使用が挙げられる．
+これは，ROS 2 環境でROS 1 パッケージの使用を可能とするものである．
+しかし，ターミナルでの操作が多く，システムの起動に多くの時間を要することが欠点である．
+デバックの面でもそれは相応しくない．
+移行しなければならない． 
 本システムは，3D-LiDARであるRfansから得られた3次元点群を pointcloud\_to\_laserscan によって，
 なお，図の青色で示したものは自作のノードとなっている．
+
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/box3_system.pdf}
@@ -542,6 +553,11 @@ Nav2 ドキュメント\\
 \bibitem{humble}
 ROS 2 Humble ドキュメント\\
 \url{https://docs.ros.org/en/humble/index.html}\\
+(最終閲覧日：\today)
+
+\bibitem{icart}
+open-rdc, icart\_mini\_driver リポジトリ\\
+\url{https://github.com/open-rdc/icart_mini_driver}\\
 (最終閲覧日：\today)
 
 
