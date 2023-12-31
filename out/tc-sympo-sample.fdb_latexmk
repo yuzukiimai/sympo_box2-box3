@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1704037711 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704037711
-  "out/tc-sympo-sample.dvi" 1704037711 43608 8eee1a08c8230221fd404f8cd5f944da "latex"
+["dvipdf"] 1704043339 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704043339
+  "out/tc-sympo-sample.dvi" 1704043339 44664 d38f5b1c6e398e66411ef28af470b57d "latex"
   (generated)
   "out/tc-sympo-sample.pdf"
-["latex"] 1704037709 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704037711
+["latex"] 1704043337 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704043339
   "/etc/texmf/web2c/texmf.cnf" 1670335848 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1704037709 27237 a0b5b93c227f609168b1825015b53ec9 ""
+  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1704043335 27918 072add845b79a1194f74d2f2d29a9a99 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm" 1136768653 6880 f19b8995b61c334d78fc734065f6b4d4 ""
@@ -132,7 +132,7 @@
   "fig/box2_sensor.pdf" 1703598976 490375 facd989deca73dff677840afb73d3999 ""
   "fig/box3.pdf" 1703086249 175320 3da2147ad78390a17a36b0102c9c43b6 ""
   "fig/box3_sensor.pdf" 1703598985 400098 58c469b238f873c9661c28c10cbf160a ""
-  "fig/box3_system.pdf" 1703274902 38076 630e8c3ad840a12bd337547363e0c6de ""
+  "fig/box3_system.pdf" 1704042724 37730 3158cff8f9e8811ec12ba09218616427 ""
   "fig/costmap.pdf" 1703172051 20776 efc30bc743edd8afc1271a7adaa7a348 ""
   "fig/map.pdf" 1703172043 17878 cf89975e79a507c070690e79bfe09f6c ""
   "fig/red_cut.pdf" 1703276963 35189 162519b77ca080e7ec1bdad61307fdce ""
@@ -143,9 +143,9 @@
   "fig/test1.pdf" 1703437971 321377 541c5517ab7a496901a694af0279bb44 ""
   "fig/test2.pdf" 1703613242 248052 b26aaa1e9d14c7db90a1389d2e39d89e ""
   "jsproceedings.cls" 1609129923 23503 31ea80bc6a420cac8ffa562f1f435009 ""
-  "out/tc-sympo-sample.aux" 1704037711 5377 21fafe3da91abed5a7a8e7997d433296 "latex"
-  "tc-sympo-sample.tex" 1704037709 27237 a0b5b93c227f609168b1825015b53ec9 ""
+  "out/tc-sympo-sample.aux" 1704043339 5396 62a734c415f8615b4c33fef4267f8df9 "latex"
+  "tc-sympo-sample.tex" 1704043335 27918 072add845b79a1194f74d2f2d29a9a99 ""
   (generated)
+  "out/tc-sympo-sample.dvi"
   "out/tc-sympo-sample.log"
   "out/tc-sympo-sample.aux"
-  "out/tc-sympo-sample.dvi"
