@@ -1,7 +1,7 @@
 \documentclass[twocolumn, 9pt]{jsproceedings}
 \RequirePackage[l2tabu, orthodox]{nag}  % 古いコマンドやパッケージを使用した場合に警告する
 \usepackage[all, warning]{onlyamsmath}  % amsmath が提供しない数式環境を使用した場合に警告する
-\usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
+% \usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
 
 
 
@@ -329,7 +329,7 @@ LiDARの走査線の配列中の指定した値がある一定値以下になっ
   \hspace*{2mm}
   \begin{minipage}[b]{0.45\linewidth}
     \centering
-    \includegraphics[height=27.2mm]{fig/3.pdf}
+    \includegraphics[height=27.4mm]{fig/3.pdf}
     \caption*{\hspace*{-1mm}(b) Stop near the box}
   \end{minipage}
   \caption{Verification of the developed system.}
@@ -436,6 +436,7 @@ box3 チームでは，信号認識にも取り組んだ．
 訓練後は，訓練済みモデルを用いて信号の色が認識できるかを検証した．
 ここで，検証結果の一例を\figref{fig:test1}，\figref{fig:test2}に示す．
 \figref{fig:test1}のように，青信号と赤信号のどちらも高い正確度で認識できた．
+ただし，認識後のロボットの行動プログラムは作成できなかったため，来年度に行う予定である．
 
 
 \begin{figure}[h!]
@@ -455,8 +456,37 @@ box3 チームでは，信号認識にも取り組んだ．
 
 \subsubsection{本走行の結果}
 box3の本走行の記録は13[m]だった．
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
 なお，記録走行の最長記録は431[m]であり，確認走行エリアは走破している．
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/human.pdf}
+  \caption{The location where the box2 team failed.}
+  \label{fig:box3-human}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/box3_1.pdf}
+  \caption{The location where the box2 team failed.}
+  \label{fig:box3-result-1}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/box3_2.pdf}
+  \caption{The location where the box2 team failed.}
+  \label{fig:box3-result-2}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=90mm]{fig/box3_3.pdf}
+  \caption{The location where the box2 team failed.}
+  \label{fig:box3-result-3}
+\end{figure}
 
 
 \section{結言}

@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1704049181 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704049182
-  "out/tc-sympo-sample.dvi" 1704049181 46952 8d72270248768045b75318b70c9a94af "latex"
+["dvipdf"] 1704079214 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704079215
+  "out/tc-sympo-sample.dvi" 1704079214 48380 285f0eb2fcf71cbf88a819df920ec4d7 "latex"
   (generated)
   "out/tc-sympo-sample.pdf"
-["latex"] 1704049179 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704049182
+["latex"] 1704079212 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704079215
   "/etc/texmf/web2c/texmf.cnf" 1670335848 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1704049179 29485 f36656c8ecfb35266e00f85246a1e6df ""
+  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1704079212 30375 dcb6ed9c4c1a4ab4196504be3a2f2fb4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm" 1136768653 6880 f19b8995b61c334d78fc734065f6b4d4 ""
@@ -54,7 +54,6 @@
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty" 1399239813 4378 f429f0da968c278653359293040a8f52 ""
   "/usr/share/texlive/texmf-dist/tex/latex/eqparbox/eqparbox.sty" 1504561519 9004 ad3bdc4b26a2ac7912e82bc12a76a39c ""
-  "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1569190624 45259 743c52a37a6e5ed83cfe0e128b2da10d ""
   "/usr/share/texlive/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -88,7 +87,6 @@
   "/usr/share/texlive/texmf-dist/tex/latex/pxufont/pxufont-ruby.sty" 1581285938 566 cb644a5d6300734a195113325152eb81 ""
   "/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg" 1579124948 4745 793d4d5a808c37a7085f620706b56fe1 ""
   "/usr/share/texlive/texmf-dist/tex/latex/siunitx/siunitx.sty" 1579124948 277221 4016d94a4b6827ec1ad2f76abfb692bc ""
-  "/usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty" 1491281624 32965 b8b3944582c948eb8dd7c6f4a0e26444 ""
   "/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty" 1158586182 21369 9ef165ca6df8815c92e693146a376c92 ""
   "/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty" 1267981840 13506 a4e71a27db1a69b6fabada5beebf0844 ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty" 1580683321 12560 ce3f59ceae9d9a27bfe037d6bf1d903c ""
@@ -123,7 +121,7 @@
   "/usr/share/texmf/tex/latex/lm/t1lmtt.fd" 1256929440 2681 354015af3b61e7be30009f084986375a ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/eptex/platex.fmt" 1685482454 10599210 9de339245e37a93177f0434a6b11323f ""
-  "fig/1.pdf" 1703612630 990807 112ceac182875a06d24c1d9d2b105900 ""
+  "fig/1.pdf" 1704078454 990807 d5a0bc1351b2ac7bf2f3f8dc64cde329 ""
   "fig/3-map.pdf" 1704045023 30118 f2e7b249ea9c04537c1d02bd4bf0727a ""
   "fig/3.pdf" 1703612191 878802 be2632c545251a221c440c52b1ccbb1c ""
   "fig/act.pdf" 1704035921 43415 25fc4a4ac2d98d1881da966f12410080 ""
@@ -132,9 +130,13 @@
   "fig/box2.pdf" 1703086216 826800 2280a5f8ccbdbc39bb4e72ab3fb40768 ""
   "fig/box2_sensor.pdf" 1703598976 490375 facd989deca73dff677840afb73d3999 ""
   "fig/box3.pdf" 1703086249 175320 3da2147ad78390a17a36b0102c9c43b6 ""
+  "fig/box3_1.pdf" 1704078179 242213 f1b21804e5ff38b7021a30d405f44af4 ""
+  "fig/box3_2.pdf" 1704079028 231342 3b9964bebb01c3605e4f9936144790b7 ""
+  "fig/box3_3.pdf" 1704079125 249361 2565d2a417b00b5ffd82dec42a390692 ""
   "fig/box3_sensor.pdf" 1703598985 400098 58c469b238f873c9661c28c10cbf160a ""
   "fig/box3_system.pdf" 1704042724 37730 3158cff8f9e8811ec12ba09218616427 ""
   "fig/costmap.pdf" 1703172051 20776 efc30bc743edd8afc1271a7adaa7a348 ""
+  "fig/human.pdf" 1704079081 1736035 1986d19a52cbf444be200cb0e58c8684 ""
   "fig/map.pdf" 1703172043 17878 cf89975e79a507c070690e79bfe09f6c ""
   "fig/red_cut.pdf" 1703276963 35189 162519b77ca080e7ec1bdad61307fdce ""
   "fig/result_box2_cut.pdf" 1703698337 533347 88be557bf394822e92b3404d21519722 ""
@@ -144,9 +146,9 @@
   "fig/test1.pdf" 1703437971 321377 541c5517ab7a496901a694af0279bb44 ""
   "fig/test2.pdf" 1703613242 248052 b26aaa1e9d14c7db90a1389d2e39d89e ""
   "jsproceedings.cls" 1609129923 23503 31ea80bc6a420cac8ffa562f1f435009 ""
-  "out/tc-sympo-sample.aux" 1704049181 5746 4b28afe214ce7d2571ad99a7f8cf6c46 "latex"
-  "tc-sympo-sample.tex" 1704049179 29485 f36656c8ecfb35266e00f85246a1e6df ""
+  "out/tc-sympo-sample.aux" 1704079214 6491 c2bbece6716fafbcf34bb52af5c9969b "latex"
+  "tc-sympo-sample.tex" 1704079212 30375 dcb6ed9c4c1a4ab4196504be3a2f2fb4 ""
   (generated)
-  "out/tc-sympo-sample.aux"
   "out/tc-sympo-sample.dvi"
+  "out/tc-sympo-sample.aux"
   "out/tc-sympo-sample.log"
