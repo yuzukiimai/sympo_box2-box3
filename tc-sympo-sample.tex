@@ -436,7 +436,7 @@ box3 チームでは，信号認識にも取り組んだ．
 訓練後は，訓練済みモデルを用いて信号の色が認識できるかを検証した．
 ここで，検証結果の一例を\figref{fig:traffic}に示す．
 結果的に，青信号と赤信号のどちらも高い正確度で認識できた．
-ただし，認識後のロボットの行動プログラムは作成できなかったため，実装は来年度以降に行う予定である．
+ただし，認識後のロボットの行動プログラムは開発していなかったため，実験走行および本走行では使用していない．
 
 
 \begin{figure}[h!]
@@ -465,52 +465,52 @@ box3の本走行の記録は13[m]だった．
 しかし，周囲の人だかりと植木が誤ってマッチングし，
 進入禁止エリアに自己位置が飛んだ (\figref{fig:box3-result-3})．
 これによって，経路追従行動を継続できなくなったといえる．
-自己位置推定の破綻は，ホイールオドメトリが正確ではなく，スキャンのデータの信頼度を大きくしていたことも
+自己位置推定の破綻は，ホイールオドメトリが正確ではないため，スキャンのデータの信頼度を大きくしていたことも
 原因のひとつであると考えられる．
 解決策としては，IMU を搭載し，複数のセンサ情報を統合することが挙げられる．
 なお，記録走行の最長記録は431[m]であり，確認走行エリアは走破している．
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=90mm]{fig/human.pdf}
   \caption{The location where the box3 team failed.}
   \label{fig:box3-human}
 \end{figure}
 
-\vspace*{2mm}
-
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=90mm]{fig/box3_1.pdf}
-  \caption{The location where the box2 team failed.}
+  \caption{Robot recognizes person in front and stops.}
   \label{fig:box3-result-1}
 \end{figure}
 
 \vspace*{2mm}
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=90mm]{fig/box3_2.pdf}
-  \caption{The location where the box2 team failed.}
+  \caption{Resume moving as the previous person is gone.}
   \label{fig:box3-result-2}
 \end{figure}
 
 \vspace*{2mm}
 
-\begin{figure}[h!]
+\begin{figure}[H]
   \centering
   \includegraphics[width=90mm]{fig/box3_3.pdf}
-  \caption{The location where the box2 team failed.}
+  \caption{People and plants matched, localization failed.}
   \label{fig:box3-result-3}
 \end{figure}
 
-\vspace*{2mm}
+\vspace*{3mm}
 
 \section{結言}
 本稿では，千葉工業大学未来ロボティクス学科 box2，box3チームで開発したロボットとシステムの構成に
 関して述べた．また，つくばチャレンジ2023に向けた取り組みについて紹介した．
 結果的に，本走行では複合的な要因により，両チーム完走できなかったが，記録走行では
-確認走行エリアを走破した．\\
+確認走行エリアを走破した．
+
+\vspace*{12.3mm}
 
 
 \section*{謝辞}

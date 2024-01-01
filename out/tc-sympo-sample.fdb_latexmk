@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1704085662 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704085662
-  "out/tc-sympo-sample.dvi" 1704085662 50700 f7e8ba5eee9875affc5f05879acc0c63 "latex"
+["dvipdf"] 1704088256 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704088256
+  "out/tc-sympo-sample.dvi" 1704088256 50728 f7877bffcc9dc749fd47fda8d1292b82 "latex"
   (generated)
   "out/tc-sympo-sample.pdf"
-["latex"] 1704085660 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704085662
+["latex"] 1704088254 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704088256
   "/etc/texmf/web2c/texmf.cnf" 1670335848 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1704085660 32035 4f19608b06306a28dfff67cd6120131a ""
+  "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1704088253 32065 ca5b0a9aa3323ecec2e119b04879e951 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm" 1136768653 6880 f19b8995b61c334d78fc734065f6b4d4 ""
@@ -148,9 +148,9 @@
   "fig/test1.pdf" 1703437971 321377 541c5517ab7a496901a694af0279bb44 ""
   "fig/test2.pdf" 1703613242 248052 b26aaa1e9d14c7db90a1389d2e39d89e ""
   "jsproceedings.cls" 1609129923 23503 31ea80bc6a420cac8ffa562f1f435009 ""
-  "out/tc-sympo-sample.aux" 1704085662 6640 44991d9b97981a440b4a6c5fd293f6a2 "latex"
-  "tc-sympo-sample.tex" 1704085660 32035 4f19608b06306a28dfff67cd6120131a ""
+  "out/tc-sympo-sample.aux" 1704088256 6655 6a88226aea7da68941cdcc8e94f47847 "latex"
+  "tc-sympo-sample.tex" 1704088253 32065 ca5b0a9aa3323ecec2e119b04879e951 ""
   (generated)
+  "out/tc-sympo-sample.log"
   "out/tc-sympo-sample.dvi"
   "out/tc-sympo-sample.aux"
-  "out/tc-sympo-sample.log"
