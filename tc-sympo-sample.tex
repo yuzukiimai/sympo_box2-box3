@@ -1,7 +1,7 @@
 \documentclass[twocolumn, 9pt]{jsproceedings}
 \RequirePackage[l2tabu, orthodox]{nag}  % 古いコマンドやパッケージを使用した場合に警告する
 \usepackage[all, warning]{onlyamsmath}  % amsmath が提供しない数式環境を使用した場合に警告する
-% \usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
+\usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
 
 
 
@@ -371,10 +371,10 @@ ROS 1は，Noetic\cite{noetic} のリリースを最後に2025年で開発サポ
 
 \subsubsection{システムの開発環境}
 ORNE-box3 では，制御コンピュータに Jetson Orin NX を用いている．
-Jetson の OS である JetPackは，現行のものでは，Ubuntu 20.04 がベースとなっており，それに対応する ROS 2 の
-バージョンは Foxy\cite{foxy} である．しかし，Foxy では ROS 2 のトピックを 可視化するツールである Rviz 2 
-のバグがあることや，Nav2\cite{nav2} の機能が制限されること，サポート期限が間近に迫っていることなどの
-問題があった．
+Jetson の OS である JetPack\cite{JetPack}は，現行のものでは，Ubuntu 20.04\cite{ubuntu} がベースとなっており，それに対応する ROS 2 の
+バージョンは Foxy\cite{foxy} である．しかし，Foxy では ROS 2 のトピックを可視化するツールである Rviz2
+\cite{rviz2} のバグがあることや，Nav2\cite{nav2} の機能が制限されること，開発のサポート期限が間近に迫っている
+ことなどの問題があった．
 
 これらの問題を解決するため，開発環境をネイティブからDockerへ移行した．
 これにより，ネイティブでは使用できなかった Foxy 以降のバージョンが使用可能となった．
@@ -434,9 +434,9 @@ box3 チームでは，信号認識にも取り組んだ．
 次に，収集した画像に信号の色 2つ(青，赤)の2 クラスでラベル付けをした．
 合計600個のデータセットを作成し，そのうちの523個を訓練用，77個を検証用とした．
 訓練後は，訓練済みモデルを用いて信号の色が認識できるかを検証した．
-ここで，検証結果の一例を\figref{fig:test1}，\figref{fig:test2}に示す．
-\figref{fig:test1}のように，青信号と赤信号のどちらも高い正確度で認識できた．
-ただし，認識後のロボットの行動プログラムは作成できなかったため，来年度に行う予定である．
+ここで，検証結果の一例を\figref{fig:traffic}に示す．
+結果的に，青信号と赤信号のどちらも高い正確度で認識できた．
+ただし，認識後のロボットの行動プログラムは作成できなかったため，実装は来年度以降に行う予定である．
 
 
 \begin{figure}[h!]
@@ -450,29 +450,34 @@ box3 チームでは，信号認識にも取り組んだ．
     \centering
     \includegraphics[width=45mm]{fig/red_cut.pdf}
     \caption*{(b) Red light (traffic)}
-  \end{minipage}%\vspace*{2mm}
+  \end{minipage}
   \caption{Recognition results in real environment.}
+  \label{fig:traffic}
 \end{figure}
 
 \subsubsection{本走行の結果}
 box3の本走行の記録は13[m]だった．
 リタイアした地点は，確認走行エリアのスタート直後の直線である．
-\figref{fig:box3-human}に示すようにロボットの前方に人がいた．
-前の人をコストと認識し，ロボットがその場で停止した．
-その後，コストが消えて移動を始めようとするが，周囲の人だかりと植木が誤ってマッチングし，
-進入禁止エリアに自己位置が飛んだ．これにより，経路追従行動を継続できなくなったと考えられる．
-また，ホイールオドメトリが正確ではなく，スキャンのデータの信頼度が大きかったため，このような
-ことが起こった．この解決策としては，IMU を搭載し，複数のセンサ情報を統合することで防ぐことが
-できるのではないかと考えられる．
-
+ここで，当時の周囲の状況を\figref{fig:box3-human}に示す．
+このようにロボットの前方には人がいたため，コストと認識してロボットがその場で
+一時停止した (\figref{fig:box3-result-1}) ．
+その後，前の人が進み，ロボットの前方のコストが消えて移動を始めようとした (\figref{fig:box3-result-2})． 
+しかし，周囲の人だかりと植木が誤ってマッチングし，
+進入禁止エリアに自己位置が飛んだ (\figref{fig:box3-result-3})．
+これによって，経路追従行動を継続できなくなったといえる．
+自己位置推定の破綻は，ホイールオドメトリが正確ではなく，スキャンのデータの信頼度を大きくしていたことも
+原因のひとつであると考えられる．
+解決策としては，IMU を搭載し，複数のセンサ情報を統合することが挙げられる．
 なお，記録走行の最長記録は431[m]であり，確認走行エリアは走破している．
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/human.pdf}
-  \caption{The location where the box2 team failed.}
+  \caption{The location where the box3 team failed.}
   \label{fig:box3-human}
 \end{figure}
+
+\vspace*{2mm}
 
 \begin{figure}[h!]
   \centering
@@ -481,12 +486,16 @@ box3の本走行の記録は13[m]だった．
   \label{fig:box3-result-1}
 \end{figure}
 
+\vspace*{2mm}
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=90mm]{fig/box3_2.pdf}
   \caption{The location where the box2 team failed.}
   \label{fig:box3-result-2}
 \end{figure}
+
+\vspace*{2mm}
 
 \begin{figure}[h!]
   \centering
@@ -495,21 +504,25 @@ box3の本走行の記録は13[m]だった．
   \label{fig:box3-result-3}
 \end{figure}
 
+\vspace*{2mm}
 
 \section{結言}
-本稿では，千葉工業大学未来ロボティクス学科 box2，box3チームで開発しているロボットとシステムの構成に
-関して述べた．また，つくばチャレンジ2023に向けた取り組みについて紹介した．\\
+本稿では，千葉工業大学未来ロボティクス学科 box2，box3チームで開発したロボットとシステムの構成に
+関して述べた．また，つくばチャレンジ2023に向けた取り組みについて紹介した．
+結果的に，本走行では複合的な要因により，両チーム完走できなかったが，記録走行では
+確認走行エリアを走破した．\\
+
 
 \section*{謝辞}
-つくばチャレンジ実行委員会の皆様およびつくば市の皆様に感謝申し上げます．また，上田研究室の皆様には
-つくばチャレンジ2023の参加にあたり，ご意見やご協力をいただき感謝申し上げます．\\
+つくばチャレンジ実行委員会の皆様，並びにつくば市の皆様に感謝申し上げます．また，
+つくばチャレンジ2023の参加にあたり，ご意見やご協力をいただいた上田研究室の皆様に感謝申し上げます．
 
+\newpage
 
 % 参考文献
 % \small
 \footnotesize
 \begin{thebibliography}{99}
-
 \bibitem{box}
 井口 颯人, 石江 義規, 樋高 聖人, 上田 隆一, 林原 靖男　: “ 屋外自律移動ロ
 ボットプラットフォーム ORNE-box の開発 ”, 3H2-03 , SI2021(2021)
@@ -599,9 +612,24 @@ ROS Noetic ドキュメント\\
 \url{https://wiki.ros.org/noetic}\\
 (最終閲覧日：\today)
 
+\bibitem{JetPack}
+NVIDIA JetPack SDK ドキュメント\\
+\url{https://developer.nvidia.com/ja-jp/embedded/jetpack}\\
+(最終閲覧日：\today)
+
+\bibitem{ubuntu}
+ubuntu releases ドキュメント\\
+\url{https://releases.ubuntu.com/focal/}\\
+(最終閲覧日：\today)
+
 \bibitem{foxy}
 ROS 2 Foxy ドキュメント\\
 \url{https://docs.ros.org/en/foxy/index.html}\\
+(最終閲覧日：\today)
+
+\bibitem{rviz2}
+TurtleBot4 User Manual ドキュメント\\
+\url{https://turtlebot.github.io/turtlebot4-user-manual/software/rviz.html}\\
 (最終閲覧日：\today)
 
 \bibitem{nav2}

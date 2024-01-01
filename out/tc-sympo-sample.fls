@@ -131,6 +131,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/nag/nag-orthodox.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nag/nag-orthodox.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/onlyamsmath/onlyamsmath.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/onlyamsmath/onlyamsmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/share/texlive/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
