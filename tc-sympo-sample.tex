@@ -62,7 +62,6 @@
 
 ORNE-box2 は，ORNE-box の問題点をリストアップし改善を図るという方針のもと，昨年度から開発を行っている．
 センサ構成などに差異はあるが，基本的なシステムは同じである．
-
 ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性能や拡張性をさらに改善した設計となっている．
 
 \subsection{ハードウェア}
@@ -124,8 +123,8 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
 
 
 \subsection{ソフトウェア}
-本研究室では，従来より ROS(Robot Operating System)のnavigation stack\cite{navigation}を基に開発された
-ソフトウェアであるorne\_navigation\cite{orne-navigation} と orne\_box\cite{orne-box} により，ロボットを自律走行させている．
+本研究室では，従来より ROS(Robot Operating System)\cite{ros}のnavigation stack\cite{navigation}を基に開発された
+ソフトウェアであるorne\_navigation\cite{orne-navigation} と orne-box\cite{orne-box} により，ロボットを自律走行させている．
 \figref{fig:soft-fig}に開発したロボットのソフトウェアを含むシステム構成を示す．
 このシステムは，LiDARなど複数のセンサを用いた Monte Carlo Localization(MCL)により確率的に自己位置を推定し， 
 経路計画に基づいて自律走行する．なお，両ソフトウェアは GitHubのopen-rdc\cite{open-rdc} で公開している．
@@ -146,15 +145,25 @@ ORNE-box2を使用するチームとORNE-box3を使用するチームの2つに�
 本章では，各チームごとの取り組みを述べる．
 
 \subsection{box2チームの取り組み}
-box2チームは，つくばチャレンジ2022において，記録走行で完走している．しかし，本走行では道路端で
-一時停止に失敗し，記録は 320[m]であった．一時停止失敗の原因としては，自己位置推定の破綻が挙げられる．
-ORNE-box2では，本走行前日にロボットの制御に使用していたコンピュータである Jetson AGX Xavier が
-起動しなくなるトラブルが発生したため，急遽 GIGABYTE GB-BXi7H-4500 に交換を行っていた．
-これにより計算が間に合わなかったおそれがある．
+% box2チームは，つくばチャレンジ2022において，記録走行で完走している．しかし，本走行では道路端で
+% 一時停止に失敗し，記録は 320[m]であった．一時停止失敗の原因としては，自己位置推定の破綻が挙げられる．
+% ORNE-box2では，本走行前日にロボットの制御に使用していたコンピュータである Jetson AGX Xavier が
+% 起動しなくなるトラブルが発生したため，急遽 GIGABYTE GB-BXi7H-4500 に交換を行っていた．
+% これにより計算が間に合わなかったおそれがある．
 
-よって本年度は，基本的には昨年度と同じシステムを用いて完走することを目的とした．
-なお，制御用のコンピュータには，記録走行完走時に用いていた Jetson AGX Xavier を使用した．
-本年度の取り組みを以下で紹介する．
+% よって本年度は，基本的には昨年度と同じシステムを用いて完走することを目的とした．
+% なお，制御用のコンピュータには，記録走行完走時に用いていた Jetson AGX Xavier を使用した．
+% 本年度の取り組みを以下で紹介する．
+
+box2チームは，つくばチャレンジ2022の本走行に参加した．
+結果として，道路端で一時停止に失敗し，記録は320[m]だった．
+一時停止に失敗した要因の一つとして，自己位置推定の破綻が挙げられる．
+ORNE-box2では，本走行前日にロボットの制御に使用していたコンピュータであるJetson AGX Xavierが
+起動しなくなるトラブルが発生した．そのため，急遽 GIGABYTE GB-BXi7H-4500 に交換を行った．
+これにより計算が間に合わなかった可能性がある．
+しかし，つくばチャレンジ2022の記録走行では制御用のコンピュータにJetson AGX Xavierを用いて完走した．
+よって，本年度は基本的に昨年度と同様のシステムを用いて完走することを目的とした．
+以下で本年度の取り組みを紹介する．
 
 \subsubsection{センサ・システム構成}
 box2チームは，\figref{fig:box2-sensor}のように LiDAR，ホイールエンコーダ，IMU，RGBカメラというセンサ構成で実験走行および本走行に臨んだ．
@@ -195,7 +204,7 @@ pointcloud\_to\_laserscan\cite{pointcloud} により，得られた3次元点群
 コンピュータの負荷を減らすことができる．
 これらの地図は，確認走行エリア，その先から信号あり横断歩道，公園エリアのそれぞれで作成した
 地図を合成している．地図の合成や編集には，GIMP\cite{gimp}を用いた．
-ちなみに，resolutionは 0.10[m/pixel]で，ファイルのサイズは 17.8 MBであった．
+なお，resolutionは 0.10[m/pixel]で，ファイルのサイズは 17.8 MBであった．
 
 \begin{figure}[h!]
   \centering
@@ -258,15 +267,15 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 各ボックスや配達先の認識には，YOLOv5\cite{yolo}を用いた．YOLOは画像を入力とし，対象物が
 画像中のどこにあるかを表すバウンディングボックスと認識率を出力する．
 データセットは自作のものを使用した．作成したデータセットは\cite{nagashima}で公開している．
-作成の手順としては，まず ORNE-box2の上部に取り付けたカメラを使用し，現地と千葉工業大学津田沼キャンパスで
-画像を収集した．
+作成の手順としては，まず ORNE-box2の上部に取り付けたカメラを使用し，公園内の配送エリアと
+千葉工業大学津田沼キャンパスで画像を収集した．
 次に，収集した画像にボックス 2つ(集荷，宅配)と配達先 3つ(a,b,c)の計5 クラスでラベル付けをした．
 合計2287個のデータセットを作成し，そのうちの2261個を訓練用，26個を検証用とした．
 訓練後は，訓練済みモデルを用いてボックスと配送先が認識できるかを検証した．
 ここで，検証結果の一例を\figref{fig:test1}，\figref{fig:test2}に示す．
 \figref{fig:test1}のように，屋内環境かつ近距離であれば，どちらも高い正確度で認識できた．
 しかし，\figref{fig:test2}の例では配達先を誤認識した．
-その原因としては\figref{fig:test1}の例に比べて，対象物とロボットの距離があることや，屋外の
+その要因としては\figref{fig:test1}の例に比べて，対象物とロボットの距離があることや，屋外の
 日照条件の変化によって，収集した画像との差が発生したことが考えられる．
 
 \begin{figure}[h!]
@@ -299,14 +308,14 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 これは，ボックスが常にカメラ画像の中心に来るように速度指令値をロボットに送ることで行う．
 この速度指令はyolo\_velという名前のトピックで配信される．
 ボックスに近づいたと判断する指標は，LiDARの走査線である．
-LiDARの走査線の配列中の指定した値がある一定値以下になったら，ロボットとボックスが 50[cm]近づいたと
+配列中の特定の index の値がある一定値以下になったら，ロボットとボックスが 50[cm]近づいたと
 判断して停止する．
 ただし，ナビゲーションの起動中は，move\_baseに基づく速度指令であるnav\_velという名前のトピック
 が配信されており，そのままだと速度指令が競合するため，どちらの速度指令を使用するかをtwist\_mux\cite{twist}に
 よって判断し，cmd\_velという名前のトピックで配信している．
 ここで，本システムを用いた実験の様子を\figref{fig:action}に示す．
-結果的に，集荷ボックスを発見して 50[cm]以内で停止はできたが，
-走行再開後に宅配ボックスの認識が途切れてしまった．
+結果的に，集荷ボックスを発見して 50[cm]以内で停止できたが，
+走行再開後に宅配ボックスの認識が途切れたため，ロボットがその場で旋回し続けた．
 その対策としては，認識が途切れてから数秒以内は行動を続けるというデッドタイムを設ける方法が考えられる．
 なお，本システムは検証段階であったため，本走行では使用していない．
 
@@ -347,7 +356,7 @@ LiDARの走査線の配列中の指定した値がある一定値以下になっ
 box2チームの本年度の本走行の記録は，715[m]であった．
 リタイアした地点は，公園前の信号機あり横断歩道である．
 \figref{fig:box2-result}に示すように，本来は一時停止が必要な場所で，ロボットが道路端からはみ出した．
-原因としては，自己位置推定の破綻が挙げられる．信号機周辺は他チームのロボットや通行人，自動車など，
+その要因としては，自己位置推定の破綻が挙げられる．信号機周辺は他チームのロボットや通行人，自動車など，
 環境がその都度大きく変化するため，作成した地図とマッチングしない，あるいは間違った場所でのマッチング
 が起こったのではないかと考えられる．
 なお box2チームは，8月18日に実施されたつくばチャレンジ2023EX＠イーアスつくば本走行にて完走している．
@@ -362,30 +371,30 @@ box2チームの本年度の本走行の記録は，715[m]であった．
 \subsection{box3チームの取り組み}
 2.2節でも述べたように，本研究室では従来より ROS を用いたロボットの自律走行システムを開発してきた．
 ただし，開発したシステムは ROS 1 で構成されており，
-ROS 1は，Noetic\cite{noetic} のリリースを最後に2025年で開発サポートが終了するという問題がある．
-サポートが終了すると，新たなシステムが開発できなくなるため，
-早急に従来の ROS 1 のシステムを ROS 2 のシステムへ移行させることが必要である．
+ROS 1は，Noetic\cite{noetic} のリリースを最後に2025年で開発サポートが終了する．
+開発サポートが終了すると，新しいソフトウェアとの互換性がなくなるため，
+早急に従来の ROS 1 のシステムを ROS 2 \cite{ros2}のシステムへ移行させることが必要である．
 
-よって，box3 チームは従来のシステムを ROS 2に移行し，ロボットを信号付近まで自律走行させることを目標とした．
-本年度の取り組みを以下で紹介する．
+よって，box3 チームは従来のシステムを ROS 2に移行し，ロボットを信号付近まで自律走行させること
+を目標とした．本年度の取り組みを以下で紹介する．
 
 \subsubsection{システムの開発環境}
 ORNE-box3 では，制御コンピュータに Jetson Orin NX を用いている．
-Jetson の OS である JetPack\cite{JetPack}は，現行のものでは，Ubuntu 20.04\cite{ubuntu} がベースとなっており，それに対応する ROS 2 の
-バージョンは Foxy\cite{foxy} である．しかし，Foxy では ROS 2 のトピックを可視化するツールである Rviz2
-\cite{rviz2} のバグがあることや，Nav2\cite{nav2} の機能が制限されること，開発のサポート期限が間近に迫っている
-ことなどの問題があった．
+Jetson の OS である JetPack\cite{JetPack}は，現行のものでは，Ubuntu 20.04\cite{ubuntu} がベース
+となっており，それに対応する ROS 2 のバージョンは Foxy\cite{foxy} である．しかし，Foxy では ROS 2 の
+トピックを可視化するツールである Rviz2\cite{rviz2} のバグ\cite{rviz-bag}があることや，
+Nav2\cite{nav2} の機能が制限されること，サポート期限が間近に迫っていることなどの問題があった．
 
-これらの問題を解決するため，開発環境をネイティブからDockerへ移行した．
+これらの問題を解決するため，開発環境をネイティブからDocker\cite{Docker}へ移行した．
 これにより，ネイティブでは使用できなかった Foxy 以降のバージョンが使用可能となった．
-本チームは，Docker 環境を用いて ROS 2 Humble\cite{humble}で開発を行った．
+さらに，Dockerではイメージごとバックアップできるため，不測の事態に対してもシステムの復旧が容易であった．
+本チームは Docker 環境を用いて ROS 2 Humble\cite{humble}で開発を行った．
 
 
 \subsubsection{センサ・システム構成}
 box3 チームは，LiDAR，ホイールエンコーダ，RGBカメラというセンサ構成で実験走行および本走行に臨んだ．
 box2 チームとは異なり，使用した LiDARは 1つである．
-なお，LiDARは 3D-LiDARであるが，box2 チームと同様に 3次元点群を圧縮し，2次元の点群として利用した．
-ロボットの上部に取り付けたカメラは，信号認識に取り組む際に使用した．
+ロボットの上部に取り付けたカメラは，信号認識に使用した．
 
 \begin{figure}[h!]
   \centering
@@ -406,11 +415,11 @@ cmd\_vel の受取先は，移動ロボットのモーション制御ソフト�
 icart drive\cite{icart_driver} である．
 なお box3 チームは ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
 つまり，本研究室が従来から開発してきた ROS 1 のパッケージを含むシステムをそのまま使用することはできない．
-この問題を解決する手段として ros1\_bridge\cite{bridge} の使用が挙げられる．
+この問題の解決策として ros1\_bridge\cite{bridge} の使用が挙げられる．
 これは，ROS 2 環境でROS 1 パッケージの使用を可能とするものである．
-しかし，ターミナルでの操作が多いため，システムの起動に多くの時間を要することが欠点である．
-よって，不足しているパッケージおよびノードは本チームで開発した． 
-\figref{fig:box3-system}の青色で示すものが自作のパッケージおよびノードである．
+しかし，ターミナル操作が煩雑となり，システムの起動に時間を要することや，通信速度の低下が懸念された．
+よって，不足しているパッケージやノードは本チームで開発した． 
+\figref{fig:box3-system}の青色で示すものが自作のパッケージやノードである．
 
 \begin{figure}[h!]
   \centering
@@ -430,8 +439,8 @@ icart drive\cite{icart_driver} である．
 box3 チームでは，信号認識にも取り組んだ．
 信号の認識には，先述の選択課題 D1 と同様に YOLOv5を用いた．
 データセットには自作のものを使用した．
-作成の手順としては，まず ORNE-box3の上部に取り付けたカメラを使用し，現地で画像を収集した．
-次に，収集した画像に信号の色 2つ(青，赤)の2 クラスでラベル付けをした．
+作成の手順としては，まず ORNE-box3の上部に取り付けたカメラを使用し，公園前の信号機あり横断歩道で
+画像を収集した．次に，収集した画像に信号の色 2つ(青，赤)の2 クラスでラベル付けをした．
 合計600個のデータセットを作成し，そのうちの523個を訓練用，77個を検証用とした．
 訓練後は，訓練済みモデルを用いて信号の色が認識できるかを検証した．
 ここで，検証結果の一例を\figref{fig:traffic}に示す．
@@ -442,13 +451,13 @@ box3 チームでは，信号認識にも取り組んだ．
 \begin{figure}[h!]
   \begin{minipage}[t]{0.47\linewidth}
     \centering
-    \includegraphics[width=45mm]{fig/blue_cut.pdf}
+    \includegraphics[width=43mm]{fig/blue_cut.pdf}
     \caption*{(a) Blue light (traffic)}
   \end{minipage}
   \hspace*{2mm}
   \begin{minipage}[t]{0.47\linewidth}
     \centering
-    \includegraphics[width=45mm]{fig/red_cut.pdf}
+    \includegraphics[width=43mm]{fig/red_cut.pdf}
     \caption*{(b) Red light (traffic)}
   \end{minipage}
   \caption{Recognition results in real environment.}
@@ -464,9 +473,9 @@ box3の本走行の記録は13[m]だった．
 その後，前の人が進み，ロボットの前方のコストが消えて移動を始めようとした (\figref{fig:box3-result-2}) ． 
 しかし，周囲の人だかりと植木が誤ってマッチングし，
 進入禁止エリアに自己位置が飛んだ (\figref{fig:box3-result-3}) ．
-これによって，経路追従行動を継続できなくなったといえる．
+これによって，経路追従行動を継続できなくなった．
 自己位置推定の破綻は，ホイールオドメトリが正確ではないため，スキャンのデータの信頼度を大きくしていたことも
-原因のひとつであると考えられる．
+要因のひとつであると考えられる．
 解決策としては，IMU を搭載し，複数のセンサ情報を統合することが挙げられる．
 なお，記録走行の最長記録は431[m]であり，確認走行エリアは走破している．
 
@@ -498,7 +507,7 @@ box3の本走行の記録は13[m]だった．
 \begin{figure}[H]
   \centering
   \includegraphics[width=90mm]{fig/box3_3.pdf}
-  \caption{People and plants matched, localization failed.}
+  \caption{Failed to localize.}
   \label{fig:box3-result-3}
 \end{figure}
 
@@ -535,6 +544,11 @@ open-rdc, orne-box, wiki\\
 \bibitem{icart}
 T-frog Project\\
 \url{https://t-frog.com/forums/forum.php?ml=icart-mini-devel}\\
+(最終閲覧日：\today)
+
+\bibitem{ros}
+ROS wiki, ROS\\
+\url{https://wiki.ros.org/ja}\\
 (最終閲覧日：\today)
 
 \bibitem{navigation}
@@ -600,7 +614,7 @@ ultralytics, yolov5 リポジトリ\\
 \bibitem{nagashima}
 NagashimaKousei, Tsukuba\_Delivery リポジトリ\\
 \url{https://github.com/NagashimaKousei/Tsukuba_Delivery}\\
-(最終閲覧日：\today)
+(最終閲覧日：\today)\\
 
 \bibitem{twist}
 ROS wiki, twist\_mux\\
@@ -610,6 +624,11 @@ ROS wiki, twist\_mux\\
 \bibitem{noetic}
 ROS Noetic ドキュメント\\
 \url{https://wiki.ros.org/noetic}\\
+(最終閲覧日：\today)
+
+\bibitem{ros2}
+ROS 2 ドキュメント\\
+\url{https://docs.ros.org/en/rolling/index.html}\\
 (最終閲覧日：\today)
 
 \bibitem{JetPack}
@@ -632,9 +651,19 @@ TurtleBot4 User Manual ドキュメント\\
 \url{https://turtlebot.github.io/turtlebot4-user-manual/software/rviz.html}\\
 (最終閲覧日：\today)
 
+\bibitem{rviz-bag}
+ros2 rviz issues\\
+\url{https://github.com/ros2/rviz/issues/787}\\
+(最終閲覧日：\today)
+
 \bibitem{nav2}
 Nav2 ドキュメント\\
 \url{https://navigation.ros.org/}\\
+(最終閲覧日：\today)
+
+\bibitem{Docker}
+Docker ドキュメント\\
+\url{https://docs.docker.jp/}\\
 (最終閲覧日：\today)
 
 \bibitem{humble}
