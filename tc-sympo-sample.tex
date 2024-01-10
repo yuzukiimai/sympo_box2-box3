@@ -47,8 +47,7 @@
 なった．そのため，従来用いていた 30 m 程度の 2次元レーザレンジセンサ 1つでは，低層の茂みや障害物などを
 検出しつつ，安定して自己位置推定を行うのが困難であると考えられた．
 さらに，道幅の狭い経路を通る必要があるため，確認走行エリアを走破するには，
-より一層ロバストなシステムが求められるようになった．
-
+よりロバストなシステムが求められるようになった．
 本稿では，このような問題を解決するためにつくばチャレンジ2023に向けて取り組んだ内容を紹介する．
 
 \section{開発したロボット}
@@ -62,8 +61,8 @@
 し，提供することを目標に開発を行っている．設計データなどは，ウェブページ上にて順次公開している\cite{box-data}．
 
 ORNE-box2 は，ORNE-box の問題点をリストアップし改善を図るという方針のもと，昨年度から開発を行っている．
-センサ構成などに差異はあるが，基本的なシステムは同じである．
-ORNE-box3 は，今年度から開発を行っており，ORNE-box2 の防水性能や拡張性をさらに改善した設計となっている．
+基本的なシステムは，ORNE-box と同じである．
+ORNE-box3 は，本年度から開発を行っており，ORNE-box2 の防水性能をさらに改善した設計となっている．
 
 \subsection{ハードウェア}
 ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:1}に示す．
@@ -100,9 +99,9 @@ ORNE-box-Series の外観を\figref{fig:orne-series}，仕様を\tableref{table:
     \scalebox{0.73}{
     \begin{tabular}{|l||c|c|c|}  \hline
       & ORNE-box & ORNE-box2 & ORNE-box3 \\ \hline \hline
-      Depth[mm] & \multicolumn{3}{c|}{600}\\ \hline
-      Width[mm] & \multicolumn{3}{c|}{506.5}\\ \hline
-      Height[mm] & \multicolumn{3}{c|}{957}\\ \hline
+      Depth[mm] & 589 & 608 & 621 \\ \hline
+      Width[mm] & 508.6 & 518.6 & 516.6\\ \hline
+      Height[mm] & 892.5 & 902 & 911\\ \hline
       Weight[kg] & \multicolumn{3}{c|}{32}\\ \hline
       Wheel diameter[mm] & \multicolumn{3}{c|}{304}\\ \hline
       Battery & \multicolumn{3}{c|}{LONG WP14-12SE}\\ \hline
@@ -312,8 +311,8 @@ box2チームでは，本年度から新しく追加された選択課題D1に�
 配列中の特定の index の値がある一定値以下になったら，ロボットとボックスが 50[cm]近づいたと
 判断して停止する．
 ただし，ナビゲーションの起動中は，move\_baseに基づく速度指令であるnav\_velという名前のトピック
-が配信されており，そのままだと速度指令が競合するため，どちらの速度指令を使用するかをtwist\_mux\cite{twist}に
-よって判断し，cmd\_velという名前のトピックで配信している．
+が配信されている．よって，そのままでは速度指令が競合するため，どちらの速度指令を使用するかを
+twist\_mux\cite{twist}で判断し，cmd\_velという名前のトピックで配信している．
 ここで，本システムを用いた実験の様子を\figref{fig:action}に示す．
 結果的に，集荷ボックスを発見して 50[cm]以内で停止できたが，
 走行再開後に宅配ボックスの認識が途切れたため，ロボットがその場で旋回し続けた．
