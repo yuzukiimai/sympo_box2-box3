@@ -422,7 +422,7 @@ box3 チームは，\figref{fig:box3-sensor}のように LiDAR，ホイールエ
 ロボットはこの経路に従って移動するが，速度指令は cmd\_vel という名前のトピックで配信される．
 cmd\_vel の受取先は，移動ロボットのモーション制御ソフトウェアの ypspur\cite{ypspur} を基にした 
 icart drive\cite{icart_driver} である．
-なお box3 チームは ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
+なお，box3 チームは ROS 2 で開発を行うが，ROS 1 と ROS 2 には互換性がない．
 つまり，本研究室が従来から開発してきた ROS 1 のパッケージを含むシステムをそのまま使用することはできない．
 この問題の解決策として ros1\_bridge\cite{bridge} の使用が挙げられる．
 これは，ROS 2 環境でROS 1 パッケージの使用を可能とするものである．
