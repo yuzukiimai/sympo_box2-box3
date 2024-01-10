@@ -4,11 +4,13 @@
 \usepackage{flushend}  % 最終ページの2カラムの左右の高さを揃える
 
 
-
 \usepackage{otf}
 \usepackage[ipa]{pxchfon}
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage[dvipdfmx,setpagesize=false]{hyperref}
+
+
 
 % タイトル
 \title{つくばチャレンジ 2023 における\\千葉工業大学未来ロボティクス学科 box2，box3チームの取り組み}
@@ -31,6 +33,14 @@
   For example, We developed robots using machine learning and robots that can run in the rain.
 }
 
+\hypersetup{
+%  bookmarksnumbered=true,
+%  bookmarksopen=true,
+ colorlinks=true,
+ linkcolor=black,
+ citecolor=black,
+ urlcolor=black
+}
 
 \begin{document}
 \maketitle
@@ -587,8 +597,8 @@ cra-ros-pkg, robot\_localization リポジトリ\\
 (最終閲覧日：\today)
 
 \bibitem{waypoint}
-masakifujiwara1, waypoint\_manager リポジトリ\\
-\url{https://github.com/masakifujiwara1/waypoint_manager}\\
+open-rdc, waypoint\_manager リポジトリ\\
+\url{https://github.com/open-rdc/waypoint_manager}\\
 (最終閲覧日：\today)
 
 \bibitem{Cartographer}
@@ -612,8 +622,8 @@ ultralytics, yolov5 リポジトリ\\
 (最終閲覧日：\today)
 
 \bibitem{nagashima}
-NagashimaKousei, Tsukuba\_Delivery リポジトリ\\
-\url{https://github.com/NagashimaKousei/Tsukuba_Delivery}\\
+open-rdc, Tsukuba\_Delivery リポジトリ\\
+\url{https://github.com/open-rdc/Tsukuba_Delivery}\\
 (最終閲覧日：\today)\\
 
 \bibitem{twist}
