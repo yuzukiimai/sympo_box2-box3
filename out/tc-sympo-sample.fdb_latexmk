@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1704897758 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704897758
+["dvipdf"] 1704897758 "out/tc-sympo-sample.dvi" "out/tc-sympo-sample.pdf" "out/tc-sympo-sample" 1704898022
   "out/tc-sympo-sample.dvi" 1704897758 71328 050137ad567414ee4d67309f6d45bb66 "latex"
   (generated)
   "out/tc-sympo-sample.pdf"
-["latex"] 1704897756 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704897758
+["latex"] 1704897756 "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" "out/tc-sympo-sample.dvi" "tc-sympo-sample" 1704898022
   "/etc/texmf/web2c/texmf.cnf" 1670335848 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/yuzuki/sympooooooooooo/tc-sympo-box2-box3/tc-sympo-sample.tex" 1704897755 33632 860076bcc70f1b45f6e90766d39b7d58 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -177,7 +177,7 @@
   "out/tc-sympo-sample.out" 1704897758 500 b8668be102147182da8db7ee22884054 "latex"
   "tc-sympo-sample.tex" 1704897755 33632 860076bcc70f1b45f6e90766d39b7d58 ""
   (generated)
-  "out/tc-sympo-sample.aux"
-  "out/tc-sympo-sample.dvi"
-  "out/tc-sympo-sample.out"
   "out/tc-sympo-sample.log"
+  "out/tc-sympo-sample.aux"
+  "out/tc-sympo-sample.out"
+  "out/tc-sympo-sample.dvi"
